@@ -21,6 +21,21 @@
 
     <!-- Globle CSS -->
     <link href="{{ asset('admin-assets/css/style.css') }}" rel="stylesheet">
+    
+    <style>
+        .nav-header {
+            background: #1a4252;
+        }
+        .nav-header .brand-logo {
+            padding-left: 1.2rem;
+        }
+        .nav-header .logo {
+            width: 190px;
+        }
+        .dlabnav {
+            background: #294E5D;
+        }
+    </style>
 
 </head>
 
@@ -49,7 +64,8 @@
         ***********************************-->
         <div class="nav-header">
             <a href="index.html" class="brand-logo">
-                <svg class="logo-abbr" xmlns="http://www.w3.org/2000/svg" width="62.074" height="65.771" viewBox="0 0 62.074 65.771">
+                <img class="logo" src="{{ asset('nexus-logo.png') }}" alt="">
+                <!-- <svg class="logo-abbr" xmlns="http://www.w3.org/2000/svg" width="62.074" height="65.771" viewBox="0 0 62.074 65.771">
                     <g id="search_11_" data-name="search (11)" transform="translate(12.731 12.199)">
                         <rect class="rect-primary-rect" id="Rectangle_1" data-name="Rectangle 1" width="60" height="60" rx="30" transform="translate(-10.657 -12.199)" fill="#f73a0b" />
                         <path id="Path_2001" data-name="Path 2001" d="M32.7,5.18a17.687,17.687,0,0,0-25.8,24.176l-19.8,21.76a1.145,1.145,0,0,0,0,1.62,1.142,1.142,0,0,0,.81.336,1.142,1.142,0,0,0,.81-.336l19.8-21.76a17.687,17.687,0,0,0,29.357-13.29A17.57,17.57,0,0,0,32.7,5.18Zm-1.62,23.392A15.395,15.395,0,0,1,9.312,6.8,15.395,15.395,0,1,1,31.083,28.572Zm0,0" transform="translate(1 0)" fill="#fff" stroke="#fff" stroke-width="1" />
@@ -59,7 +75,7 @@
                 <svg class="brand-title" xmlns="http://www.w3.org/2000/svg" width="134.01" height="96.365" viewBox="0 0 134.01 96.365">
                     <text x="10" y="50" fill="#464646" font-size="30" font-family="Poppins-Light, Poppins" font-weight="700">P.M</text>
                     <text x="10" y="70" fill="#787878" font-size="12" font-family="Poppins-Light, Poppins" font-weight="500">Welcome Admin</text>
-                </svg>
+                </svg> -->
             </a>
             <div class="nav-control">
                 <div class="hamburger">
