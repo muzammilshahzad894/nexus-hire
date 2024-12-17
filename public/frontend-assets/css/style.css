@@ -91,8 +91,8 @@
     position: relative;
     margin-right: 25px;
     padding: 35px 0;
-    /* color: var(--bs-white); */
-    color: var(--bs-dark);
+    color: var(--bs-white);
+    /* color: var(--bs-dark); */
     font-size: 17px;
     font-weight: 400;
     outline: none;
@@ -101,7 +101,7 @@
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--bs-dark);
+    color: var(--bs-white);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -110,12 +110,13 @@
 }
 
 .navbar-light .navbar-brand img {
-    max-height: 60px;
+    /* max-height: 60px; */
     transition: .5s;
 }
 
 .sticky-top.navbar-light .navbar-brand img {
-    max-height: 45px;
+    max-height: 150px;
+    padding: 10px 0px;
 }
 
 .navbar .dropdown-toggle::after {
@@ -143,7 +144,7 @@
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
         position: relative;
-        background: var(--bs-white);
+        background: #294E5D;
     }
 
     .navbar.navbar-expand-lg .navbar-toggler {
@@ -189,19 +190,19 @@
         left: 0;
         border-top: 0;
         border-right: 0;
-        border-bottom: 1px solid;
+        /* border-bottom: 1px solid; */
         border-left: 0;
-        border-style: dotted;
+        /* border-style: dotted; */
         z-index: 999;
     }
     
     .sticky-top.navbar-light {
         position: fixed;
-        background: var(--bs-light);
+        background: #294E5D;
         border: none;
     }
 
-    .navbar-light .navbar-nav .nav-item::before {
+    /* .navbar-light .navbar-nav .nav-item::before {
         position: absolute;
         content: "";
         width: 0;
@@ -210,13 +211,13 @@
         left: 50%;
         background: var(--bs-primary);
         transition: .5s;
-    }
+    } */
 
     .sticky-top.navbar-light .navbar-nav .nav-item::before {
         bottom: 0;
     }
 
-    .navbar-light .navbar-nav .nav-item::after {
+    /* .navbar-light .navbar-nav .nav-item::after {
         content: "";
         position: absolute;
         bottom: 1px;
@@ -226,7 +227,7 @@
         border-color: transparent transparent var(--bs-primary) transparent;
         opacity: 0;
         transition: 0.5s;
-    }
+    } */
 
     .navbar-light .navbar-nav .nav-item:hover::after,
     .navbar-light .navbar-nav .nav-item.active::after {
@@ -298,6 +299,10 @@
 
 .carousel .carousel-inner .carousel-item {
     position: relative;
+}
+
+.carousel .carousel-inner .carousel-item img {
+    /* height: 100vh; */
 }
 
 .carousel .carousel-inner .carousel-item .carousel-caption-1  {

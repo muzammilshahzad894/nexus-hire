@@ -47,13 +47,14 @@
 
 	<!-- Navbar & Hero Start -->
 	<div class="container-fluid position-relative p-0">
-		<nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 bg-light shadow-sm">
+		<nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 shadow-sm">
 			<a href="{{ route('frontend.index') }}" class="navbar-brand p-0">
-				<h1 class="text-primary d-flex align-items-center">
+                <img src="{{ asset('frontend-assets/images/nexus-logo-removebg-preview.PNG') }}" class="logo-image px-1" alt="Logo" />
+				<!-- <h1 class="text-primary d-flex align-items-center">
 					Nexus
 					<img src="{{ asset('frontend-assets/images/Logo.png') }}" class="logo-image px-1" alt="Logo" />
 					ire
-				</h1>
+				</h1> -->
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
 				<span class="fa fa-bars"></span>
@@ -77,7 +78,7 @@
 				</ol>
 				<div class="carousel-inner" role="listbox">
 					<div class="carousel-item active">
-						<img src="{{ asset('frontend-assets/uploads/banners/1727250519.png') }}" class="img-fluid w-100" alt="NexusHire">
+						<img src="{{ asset('frontend-assets/uploads/banners/banner3.JPG') }}" class="img-fluid w-100" alt="NexusHire">
 						<div class="carousel-caption-2">
 							<div class="carousel-caption-2-content" style="max-width: 900px;">
 								<h4 class="text-white text-uppercase fw-bold mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s; letter-spacing: 3px;">NexusHire</h4>
@@ -92,7 +93,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="carousel-item ">
+					<!-- <div class="carousel-item ">
 						<img src="{{ asset('frontend-assets/uploads/banners/1727250534.png') }}" class="img-fluid w-100" alt="NexusHire">
 						<div class="carousel-caption-2">
 							<div class="carousel-caption-2-content" style="max-width: 900px;">
@@ -107,7 +108,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<!-- <div class="carousel-item"></div>
                 <img src="./images/banner1.jpg" class="img-fluid w-100" alt="Image">
                 <div class="carousel-caption-2">
@@ -141,14 +142,14 @@
                 </div>
             </div> -->
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+				<!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
 					<span class="carousel-control-prev-icon btn btn-primary fadeInLeft animated" aria-hidden="true" data-animation="fadeInLeft" data-delay="1.1s" style="animation-delay: 1.3s;"> <i class="fa fa-angle-left fa-3x"></i></span>
 					<span class="visually-hidden">Previous</span>
 				</button>
 				<button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
 					<span class="carousel-control-next-icon btn btn-primary fadeInRight animated" aria-hidden="true" data-animation="fadeInLeft" data-delay="1.1s" style="animation-delay: 1.3s;"><i class="fa fa-angle-right fa-3x"></i></span>
 					<span class="visually-hidden">Next</span>
-				</button>
+				</button> -->
 			</div>
 		</div>
         @endif

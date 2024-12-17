@@ -32,9 +32,9 @@
     background: transparent;
     transition: background 0.3s ease;
 } */
-.navbar {
-    background-color: rgba(239, 239, 239, 0.95) !important; /* Slightly transparent white */
-}
+/* .navbar {
+    background-color: rgba(239, 239, 239, 0.95) !important;
+} */
 /* Container around the logo */
 .navbar-brand {
     position: relative;
@@ -81,7 +81,7 @@
 
 
 .logo-image {
-    height: 1em; /* Align the image height to the text height */
+    width: 150px;
     /* margin: 0 0.2em; Add some spacing between the text and image */
 }
 
