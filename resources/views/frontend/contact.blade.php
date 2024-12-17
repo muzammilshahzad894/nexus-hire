@@ -1,5 +1,13 @@
 @extends('layouts.frontend.app')
 
+@section('css')
+<style>
+    .navbar {
+        background: #294E5D;
+    }
+</style>
+@endsection
+
 @section('content')
 <div class="container-fluid contact bg-light py-5">
     <div class="container py-5 mt-5">

@@ -162,7 +162,7 @@
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
         margin-left: 0;
-        color: var(--bs-dark);
+        color: #fff;
     }
 
     .navbar-light .navbar-brand img {

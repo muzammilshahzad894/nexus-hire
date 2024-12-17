@@ -33,6 +33,19 @@
 
 	<!-- Custom Stylesheet -->
 	<link href="{{ asset('frontend-assets/css/custom.css') }}" rel="stylesheet">
+	
+	@yield('css')
+	
+	<style>
+		.navbar {
+			position: absolute;
+			width: 100%;
+			z-index: 1000;
+		}
+		.navbar:has(.navbar-collapse.show) {
+			background-color: #294E5D;
+		}
+	</style>
 </head>
 
 <body>
@@ -47,7 +60,7 @@
 
 	<!-- Navbar & Hero Start -->
 	<div class="container-fluid position-relative p-0">
-		<nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 shadow-sm">
+		<nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
 			<a href="{{ route('frontend.index') }}" class="navbar-brand p-0">
                 <img src="{{ asset('frontend-assets/images/nexus-logo-removebg-preview.PNG') }}" class="logo-image px-1" alt="Logo" />
 				<!-- <h1 class="text-primary d-flex align-items-center">
@@ -87,8 +100,8 @@
 									We specialize in recruiting top talent for both permanent and contract positions. At NexusHire, we prioritize understanding your unique skills, experience, and career goals
 								</p>
 								<div class="carousel-caption-1-content-btn fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.7s" style="animation-delay: 1.7s;">
-									<a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="#">Join Us</a>
-									<a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="#">Learn More</a>
+									<a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="{{ route('frontend.jobboard') }}">Join Us</a>
+									<a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="{{ route('frontend.about') }}">Learn More</a>
 								</div>
 							</div>
 						</div>
@@ -162,52 +175,32 @@
 	<!-- Footer Start -->
 	<div class="container-fluid footer  wow fadeIn" data-wow-delay="0.2s">
 		<div class="container py-5">
-			<div class="row g-5 mb-5 align-items-center">
-				<div class="col-lg-7">
-					<div class="position-relative mx-auto">
-						<input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Email address to Subscribe">
-						<button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
-					</div>
-				</div>
-				<div class="col-lg-5">
-					<div class="d-flex align-items-center justify-content-center justify-content-lg-end">
-						<a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-						<a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-						<a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
-						<a class="btn btn-secondary btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-					</div>
-				</div>
-			</div>
 			<div class="row g-5">
 				<div class="col-md-7 col-lg-7 col-xl-3">
 					<div class="footer-item d-flex flex-column">
 						<div class="footer-item">
 							<div class="d-flex justify-content-between align-items-start">
-								<div class="d-flex p-2" style="flex: 1;">
-									<img src="{{ asset('frontend-assets/images/Logo.png') }}" class="img-fluid footer-img" alt="">
-								</div>
-								<div style="flex: 2;">
-									<h4 class="h4 text-white mb-4">NEXUSHIRE WORKFORCE SOLUTIONS INC.</h4>
-								</div>
+								<img src="{{ asset('frontend-assets/images/nexus-logo-removebg-preview.PNG') }}" class="logo-image px-1" alt="Logo" style="width: 200px;" />
 							</div>
 							<p class="mb-3">
 								NexusHire Workforce Solutions Inc. is a Canada-based staffing company that specializes in staffing solutions for the administrative, call centre, manufacturing, warehouse and logistics fields. We have multiple branches across Canada, located in Alberta and Ontario.
 							</p>
 						</div>
-						<div class="position-relative">
-							<input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-							<button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+						<div class="d-flex align-items-center justify-content-start">
+							<a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
+							<a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter text-white"></i></a>
+							<a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram text-white"></i></a>
+							<a class="btn btn-secondary btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-5 col-lg-5 col-xl-3">
 					<div class="footer-item d-flex flex-column">
 						<h4 class="text-white mb-4">About Us</h4>
-						<a href="about.html"><i class="fas fa-angle-right me-2"></i> Why Choose Us</a>
-						<a href="jobseeker/work-with-us.html"><i class="fas fa-angle-right me-2"></i> For Jobseekers</a>
-						<a href="employer/expertise.html"><i class="fas fa-angle-right me-2"></i> For Employers</a>
-						<a href="employer/service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
-						<a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+						<a href="{{ route('frontend.index') }}"><i class="fas fa-angle-right me-2"></i> Home</a>
+						<a href="{{ route('frontend.about') }}"><i class="fas fa-angle-right me-2"></i> About</a>
+						<a href="{{ route('frontend.jobboard') }}"><i class="fas fa-angle-right me-2"></i> Job Board</a>
+						<a href="{{ route('frontend.contact') }}"><i class="fas fa-angle-right me-2"></i> Contact us</a>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-6 col-xl-3">

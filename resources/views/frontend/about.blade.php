@@ -15,7 +15,7 @@
         <div class="row g-5">
             <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                 <div class="about-img rounded h-100">
-                    <img src="{{ asset('frontend-assets/uploads/about/1728446020.jpg') }}" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="NexusHire Team">
+                    <img src="{{ asset('frontend-assets/uploads/about/work-force.jpg') }}" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="NexusHire Team">
                     <div class="about-exp"><span>16+ Years of Excellence</span></div>
                 </div>
             </div>
@@ -70,31 +70,12 @@
                     <p class="mb-4">
                         NexusHire is widely recognized as one of the industry’s fastest growing staffing agencies. Thanks to our longstanding experience in various industries, we have the capacity to build meaningful, long-lasting relationships with all our clients. Our success is a result of our commitment to the best people, the best solutions and the best results. We have dedicated our focus and passion to finding highly skilled and motivated talents for a variety of hiring companies. Our goal is to know your hiring needs as well as you do.
                     </p>
-
-                    <!-- <div class="bg-light rounded p-4 mb-4">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="d-flex">
-                                            <div class="pe-4">
-                                                <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
-                                                    <i class="fas fa-thumbs-up text-white fa-2x"></i>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <a href="#" class="h4 d-inline-block mb-3">Satisfied Clients</a>
-                                                <p class="mb-0">We pride ourselves on delivering solutions that meet client needs, earning their trust and loyalty.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
                     <div class="bg-light rounded p-4 mb-4">
                         <div class="row">
                             <div class="col-12">
                                 <div class="d-flex">
                                     <div class="pe-4">
                                         <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
-                                            <!-- <i class="fas fa-check-circle text-white fa-2x"></i> -->
                                             <i class="fas fa-phone-alt text-white fa-2x"></i>
                                         </div>
                                     </div>
@@ -113,7 +94,7 @@
             </div>
             <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
                 <div class="bestmatch-img rounded h-100">
-                    <img src="{{ asset('frontend-assets/uploads/about/1727942062.jpg') }}" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="NexusHire Team">
+                    <img src="{{ asset('frontend-assets/uploads/about/business-meeting.jpg') }}" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="NexusHire Team">
                     <div class="bestmatch-exp"><span>Building Strong Partnerships</span></div>
                 </div>
             </div>

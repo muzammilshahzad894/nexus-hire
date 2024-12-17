@@ -7,7 +7,7 @@
 		<div class="row g-5">
 			<div class="col-xl-6 wow" data-wow-delay="0.2s">
 				<div class="about-img rounded h-100">
-					<img src="{{ asset('frontend-assets/uploads/about/1728446020.jpg') }}" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="NexusHire Team">
+					<img src="{{ asset('frontend-assets/uploads/about/work-force.jpg') }}" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="NexusHire Team">
 					<div class="about-exp"><span>16+ Years of Excellence</span></div>
 				</div>
 			</div>
@@ -86,7 +86,7 @@
 			</div>
 			<div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
 				<div class="bestmatch-img rounded h-100">
-					<img src="{{ asset('frontend-assets/uploads/about/1727942062.jpg') }}" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="NexusHire Team">
+					<img src="{{ asset('frontend-assets/uploads/about/business-meeting.jpg') }}" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="NexusHire Team">
 					<div class="bestmatch-exp"><span>Building Strong Partnerships</span></div>
 				</div>
 			</div>
@@ -227,52 +227,40 @@
 			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
 				<div class="feature-item p-4 h-100 d-flex flex-column">
 					<div class="feature-icon mb-3"><i class="fas fa-briefcase text-white fa-3x"></i></div>
-					<a href="employer/hiring.html" class="h4 mb-3">Hiring Technology</a>
+					<a href="#" class="h4 mb-3">Hiring Technology</a>
 					<p class="mb-0">
 						Using cutting-edge technology our system matches candidates with open positions,
 						selecting those most suitable for the role not just in skill, but in personality.
 					</p>
-					<div class="mt-auto">
-						<a href="employer/hiring.html" class="btn text-secondary">Read More <i class="fa fa-angle-right"></i></a>
-					</div>
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
 				<div class="feature-item p-4 h-100 d-flex flex-column">
 					<div class="feature-icon mb-3"><i class="fas fa-file-alt text-white fa-3x"></i></div>
-					<a href="employer/hiring.html" class="h4 mb-3">Job Descriptions</a>
+					<a href="#" class="h4 mb-3">Job Descriptions</a>
 					<p class="mb-0">
 						We help you define the tasks, responsibilities, and expectations of any position.
 					</p>
-					<div class="mt-auto">
-						<a href="employer/hiring.html" class="btn text-secondary">Read More <i class="fa fa-angle-right"></i></a>
-					</div>
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
 				<div class="feature-item p-4 h-100 d-flex flex-column">
 					<div class="feature-icon mb-3"><i class="fas fa-user-check text-white fa-3x"></i></div>
-					<a href="employer/hiring.html" class="h4 mb-3">Best Candidates</a>
+					<a href="#" class="h4 mb-3">Best Candidates</a>
 					<p class="mb-0">
 						Our unmatched recruitment insight ensures that you enjoy a streamlined process that selects
 						only the most suitable candidates for interview.
 					</p>
-					<div class="mt-auto">
-						<a href="employer/hiring.html" class="btn text-secondary">Read More <i class="fa fa-angle-right"></i></a>
-					</div>
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
 				<div class="feature-item p-4 h-100 d-flex flex-column">
 					<div class="feature-icon mb-3"><i class="fas fa-tasks text-white fa-3x"></i></div>
-					<a href="employer/hiring.html" class="h4 mb-3">Assessment</a>
+					<a href="#" class="h4 mb-3">Assessment</a>
 					<p class="mb-0">
 						We gain a deeper understanding of the types of jobs and tasks each candidate is naturally
 						predisposed for and will be a success at.
 					</p>
-					<div class="mt-auto">
-						<a href="employer/hiring.html" class="btn text-secondary">Read More <i class="fa fa-angle-right"></i></a>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -281,7 +269,7 @@
 <!-- Refer a friend End-->
 
 <!-- Expertise Start -->
-<div class="container-fluid service bg-light overflow-hidden py-5">
+<!-- <div class="container-fluid service bg-light overflow-hidden py-5">
 	<div class="container py-5">
 		<div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
 			<h4 class="text-uppercase text-primary">Our Expertise</h4>
@@ -384,7 +372,6 @@
 									<ul class="list list-style-none mb-0 pl-0">
 										<li>Call centre agents</li>
 										<li>Telemarketing reps</li>
-										<!-- <li>Sales support</li> -->
 									</ul>
 								</div>
 							</div>
@@ -472,7 +459,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 <!-- Expertise End -->
 
 <!-- Fact Counter -->
@@ -533,7 +520,7 @@
 <!-- Fact Counter End -->
 
 <!-- Blog Start -->
-<div class="container-fluid blog pb-5">
+<!-- <div class="container-fluid blog pb-5">
 	<div class="container pb-5">
 
 		<div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
@@ -569,7 +556,6 @@
 				<div class="blog-item">
 					<div class="blog-img">
 						<img src="{{ asset('frontend-assets/uploads/blog/1727323783.jpg') }}" class="img-fluid rounded-top w-100" alt="NexusHire Blog 1">
-						<!-- <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Jan 12 2025</div> -->
 					</div>
 					<div class="blog-content rounded-bottom p-4">
 						<a href="https://www.reed.co.uk/career-advice/how-to-deal-with-stress-in-an-interview/" class="h4 d-inline-block mb-3">How to deal with job interview stress</a>
@@ -578,36 +564,9 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="https://www.nexushire.ca/img/blog-5.jpg" class="img-fluid rounded-top w-100" alt="NexusHire Blog 2">
-                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Jan 15 2025</div>
-                    </div>
-                    <div class="blog-content rounded-bottom p-4">
-                        <a href="#" class="h4 d-inline-block mb-3">How To Crack Almost Any Job Interview</a>
-                        <p>Discover the latest trends in workforce management and how NexusHire stays ahead of the curve.</p>
-                        <a href="#" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="https://www.nexushire.ca/img/blog-6.jpg" class="img-fluid rounded-top w-100" alt="NexusHire Blog 3">
-                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Feb 1 2025</div>
-                    </div>
-                    <div class="blog-content rounded-bottom p-4">
-                        <a href="#" class="h4 d-inline-block mb-3">How to Network with Confidence</a>
-                        <p>Written by Jonathan Bechan, Senior Manager, Recruitment, Scotiabank</p>
-                        <a href="#" class="fw-bold text-secondary mt-auto">Read More <i class="fa fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div> -->
 		</div>
 	</div>
-</div>
+</div> -->
 <!-- Blog End -->
 
 <!-- Testimonial Start -->
