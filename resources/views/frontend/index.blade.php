@@ -81,7 +81,7 @@
 							</div>
 						</div>
 					</div>
-					<a href="contact.html" class="btn btn-secondary rounded-pill py-3 px-5">Contact us</a>
+					<a href="{{ route('frontend.contact') }}" class="btn btn-secondary rounded-pill py-3 px-5">Contact us</a>
 				</div>
 			</div>
 			<div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
