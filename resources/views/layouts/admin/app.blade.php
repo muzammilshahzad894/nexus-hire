@@ -22,6 +22,8 @@
     <!-- Globle CSS -->
     <link href="{{ asset('admin-assets/css/style.css') }}" rel="stylesheet">
     
+    @yield('css')
+    
     <style>
         .nav-header {
             background: #1a4252;
@@ -96,20 +98,12 @@
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left"></div>
                         <ul class="navbar-nav header-right">
-
-                            <li class="nav-item dropdown notification_dropdown">
-                                <a class="nav-link bell dz-theme-mode p-0" href="javascript:void(0);">
-                                    <i id="icon-light" class="fas fa-sun"></i>
-                                    <i id="icon-dark" class="fas fa-moon"></i>
-
-                                </a>
-                            </li>
                             <li class="nav-item dropdown header-profile">
                                 <a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
                                     <img src="{{ asset('admin-assets/images/profile/pic1.jpg') }}" width="20" alt="">
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end">
-                                    <a href="#" class="dropdown-item ai-icon">
+                                    <a href="{{ route('admin.profile') }}" class="dropdown-item ai-icon">
                                         <svg id="icon-user2" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                             <circle cx="12" cy="7" r="4"></circle>

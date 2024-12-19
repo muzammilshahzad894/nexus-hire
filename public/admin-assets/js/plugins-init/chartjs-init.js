@@ -59,7 +59,7 @@
 			//generate gradient
 			const barChart_2gradientStroke = barChart_2.createLinearGradient(0, 0, 0, 250);
 			barChart_2gradientStroke.addColorStop(0, "rgba(249, 58, 11, 1)");
-			barChart_2gradientStroke.addColorStop(1, "rgba(249, 58, 11, 0.5)");
+			barChart_2gradientStroke.addColorStop(1, "#a1ba0c");
 
 			barChart_2.height = 100;
 
@@ -106,7 +106,7 @@
 			//generate gradient
 			const barChart_3gradientStroke = barChart_3.createLinearGradient(50, 100, 50, 50);
 			barChart_3gradientStroke.addColorStop(0, "rgba(249, 58, 11, 1)");
-			barChart_3gradientStroke.addColorStop(1, "rgba(249, 58, 11, 0.5)");
+			barChart_3gradientStroke.addColorStop(1, "#a1ba0c");
 
 			const barChart_3gradientStroke2 = barChart_3.createLinearGradient(50, 100, 50, 50);
 			barChart_3gradientStroke2.addColorStop(0, "rgba(98, 126, 234, 1)");
@@ -273,7 +273,7 @@
 			//generate gradient
 			const lineChart_2gradientStroke = lineChart_2.createLinearGradient(500, 0, 100, 0);
 			lineChart_2gradientStroke.addColorStop(0, "rgba(249, 58, 11, 1)");
-			lineChart_2gradientStroke.addColorStop(1, "rgba(249, 58, 11, 0.5)");
+			lineChart_2gradientStroke.addColorStop(1, "#a1ba0c");
 
 			// Chart.controllers.line = Chart.controllers.line.extend({
 			// 	draw: function () {
@@ -306,7 +306,7 @@
 							borderColor: lineChart_2gradientStroke,
 							borderWidth: "2",
 							backgroundColor: 'transparent', 
-							pointBackgroundColor: 'rgba(249, 58, 11, 0.5)',
+							pointBackgroundColor: '#a1ba0c',
 							tension: 0.5,
 						}
 					]
@@ -342,7 +342,7 @@
 			//generate gradient
 			const lineChart_3gradientStroke1 = lineChart_3.createLinearGradient(500, 0, 100, 0);
 			lineChart_3gradientStroke1.addColorStop(0, "rgba(249, 58, 11, 1)");
-			lineChart_3gradientStroke1.addColorStop(1, "rgba(249, 58, 11, 0.5)");
+			lineChart_3gradientStroke1.addColorStop(1, "#a1ba0c");
 
 			const lineChart_3gradientStroke2 = lineChart_3.createLinearGradient(500, 0, 100, 0);
 			lineChart_3gradientStroke2.addColorStop(0, "rgba(255, 92, 0, 1)");
@@ -379,7 +379,7 @@
 							borderColor: lineChart_3gradientStroke1,
 							borderWidth: "2",
 							backgroundColor: 'transparent', 
-							pointBackgroundColor: 'rgba(249, 58, 11, 0.5)',
+							pointBackgroundColor: '#a1ba0c',
 							tension: 0.5,
 						}, {
 							label: "My First dataset",

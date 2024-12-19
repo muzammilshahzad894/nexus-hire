@@ -28,7 +28,7 @@
                                 <div class="auth-form">
                                     <h3 class="text-center mb-4">SIGN IN YOUR ACCOUNT</h3>
                                     @include('partials.messages')
-                                    <form action="{{ route('admin.login') }}" method="POST">
+                                    <form action="{{ route('admin.login') }}" method="POST" onsubmit="document.getElementById('submit-btn').disabled = true; document.getElementById('submit-btn').innerHTML = 'Authenticating...';">
                                         @csrf
                                         <div class="mb-3">
                                             <label class="mb-1"><strong>Email</strong></label>
@@ -45,7 +45,7 @@
                                             @enderror
                                         </div>
                                         <div class="text-center">
-                                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                                            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Sign In</button>
                                         </div>
                                     </form>
                                 </div>

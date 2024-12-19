@@ -22,3 +22,9 @@
     </button>
 </div>
 @endif
+
+<style>
+    .alert-success {
+        color: #2a5b28 !important;
+    }
+</style>
