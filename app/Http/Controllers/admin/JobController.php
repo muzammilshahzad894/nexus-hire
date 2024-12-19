@@ -42,4 +42,40 @@ class JobController extends Controller
     {
         return view('admin.jobs.create');
     }
+    
+    public function store(JobRequest $request)
+    {
+        try {
+            $data = $request->validated();
+            Job::create($data);
+            return redirect()->route('admin.jobs')->with('success', 'Job created successfully');
+        } catch (Exception $e) {
+            Log::error(__CLASS__ . '::' . __LINE__ . ' Exception: ' . $e->getMessage());
+            return redirect()->back()->with('error', 'Something went wrong');
+        }
+    }
+    
+    public function edit($id)
+    {
+        try {
+            $job = Job::find($id);
+            return view('admin.jobs.edit', compact('job'));
+        } catch (Exception $e) {
+            Log::error(__CLASS__ . '::' . __LINE__ . ' Exception: ' . $e->getMessage());
+            return redirect()->back()->with('error', 'Something went wrong');
+        }
+    }
+    
+    public function update(JobRequest $request, $id)
+    {
+        try {
+            $data = $request->validated();
+            $job = Job::find($id);
+            $job->update($data);
+            return redirect()->route('admin.jobs')->with('success', 'Job updated successfully');
+        } catch (Exception $e) {
+            Log::error(__CLASS__ . '::' . __LINE__ . ' Exception: ' . $e->getMessage());
+            return redirect()->back()->with('error', 'Something went wrong');
+        }
+    }
 }

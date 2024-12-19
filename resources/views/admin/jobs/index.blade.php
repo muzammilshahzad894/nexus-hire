@@ -38,8 +38,19 @@
                         </select>
                     </div>
                     <div class="filter-item">
-                        <button type="submit" class="btn btn-primary mt-4">Filter</button>
+                        <button type="submit" class="btn btn-primary mt-4">
+                            <i class="fa fa-search"></i>
+                            Search
+                        </button>
                     </div>
+                    @if(request()->title || request()->created_date || request()->status || request()->sort)
+                        <div class="filter-item">
+                            <a href="{{ route('admin.jobs') }}" class="btn btn-danger mt-4">
+                                <i class="fa fa-times"></i>
+                                Clear
+                            </a>
+                        </div>
+                    @endif
                 </div>
             </form>
         </div>
@@ -53,24 +64,26 @@
                         <tr>
                             <th>Title</th>
                             <th>Status</th>
+                            <th>Created Date</th>
                             <th>Action </th>
                         </tr>
                     </thead>
                     <tbody>
                         @if($jobs->count() > 0)
-                            @foreach($jobs  as $job)
+                            @foreach($jobs as $job)
                                 <tr>
-                                    <td>{{ @$jobs->title }}</td>
+                                    <td>{{ $job->title }}</td>
                                     <td>
-                                        @if($jobs->status == 1)
+                                        @if($job->status == 1)
                                             <span class="badge badge-success">Active</span>
                                         @else
                                             <span class="badge badge-danger">Inactive</span>
                                         @endif
                                     </td>
+                                    <td>{{ $job->created_at->format('d M, Y') }}</td>
                                     <td>
-                                        <a href="{{ route('admin.jobs.edit', $jobs->id) }}" class="btn btn-primary btn-sm">Edit</a>
-                                        <a href="{{ route('admin.jobs.destroy', $jobs->id) }}" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure to delete?')"><i class="fas fa-trash"></i></a>
+                                        <a href="{{ route('admin.jobs.edit', $job->id) }}" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
+                                        <a href="{{ route('admin.jobs.delete', $job->id) }}" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure to delete?')"><i class="fas fa-trash"></i></a>
                                     </td>
                                 </tr>
                             @endforeach
