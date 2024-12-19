@@ -12395,9 +12395,9 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
         font-weight: 500;
         display: inline-block;
         font-size: 1rem;
-        color: #737B8B; }
+        color: #fff; }
         .dlabnav .metismenu > li > a i {
-          color: #96A0AF; }
+          color: #fff; }
         .dlabnav .metismenu > li > a svg {
           max-width: 1.5rem;
           max-height: 1.5rem;

@@ -1,12 +1,18 @@
-<nav class="mt-2">
-    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item">
-            <a href="{{ route('admin.dashboard') }}" class="nav-link active">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
-                <p>
-                    Dashboard
-                </p>
-            </a>
-        </li>
-    </ul>
-</nav>
+<div class="dlabnav">
+    <div class="dlabnav-scroll">
+        <ul class="metismenu" id="menu">
+            <li class="{{ request()->routeIs('admin.dashboard') ? 'mm-active' : '' }}">
+                <a href="{{ route('admin.dashboard') }}" class="" aria-expanded="false">
+                    <i class="flaticon-025-dashboard"></i>
+                    <span class="nav-text">Dashboard</span>
+                </a>
+            </li>
+            <li class="{{ request()->routeIs('admin.jobs') ? 'mm-active' : '' }}">
+                <a href="{{ route('admin.jobs') }}" class="" aria-expanded="false">
+                    <i class="fa fa-briefcase"></i>
+                    <span class="nav-text">Jobs</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

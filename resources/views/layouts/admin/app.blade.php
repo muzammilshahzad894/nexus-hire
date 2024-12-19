@@ -37,6 +37,10 @@
         .dlabnav {
             background: #294E5D;
         }
+        .dlabnav .metismenu > li.mm-active > a {
+            background: rgb(255 255 255 / 17%);
+            color: #fff !important;
+        }
     </style>
 
 </head>
@@ -132,18 +136,7 @@
         <!--**********************************
             Sidebar start
         ***********************************-->
-        <div class="dlabnav">
-            <div class="dlabnav-scroll">
-                <ul class="metismenu" id="menu">
-                    <li class="mm-active">
-                        <a href="#" class="" aria-expanded="false">
-                            <i class="flaticon-025-dashboard"></i>
-                            <span class="nav-text">Dashboard</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        @include('partials.admin-sidebar')
         <!--**********************************
             Sidebar end
         ***********************************-->
