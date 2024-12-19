@@ -78,4 +78,16 @@ class JobController extends Controller
             return redirect()->back()->with('error', 'Something went wrong');
         }
     }
+    
+    public function delete($id)
+    {
+        try {
+            $job = Job::findOrfail($id);
+            $job->delete();
+            return redirect()->route('admin.jobs')->with('success', 'Job deleted successfully');
+        } catch (Exception $e) {
+            Log::error(__CLASS__ . '::' . __LINE__ . ' Exception: ' . $e->getMessage());
+            return redirect()->back()->with('error', 'Something went wrong');
+        }
+    }
 }
