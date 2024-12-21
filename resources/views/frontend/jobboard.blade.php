@@ -14,35 +14,38 @@
     </div>
 </div>
 <div class="container my-5">
-    @if($jobs->count() > 0)
-    <div class="row job-listing">
-        @foreach($jobs as $job)
-        <div class="col-md-4 mt-4">
-            <div class="card card-custom h-100">
-                <div class="card-body bg-white">
-                    <h5 class="card-title-custom mb-3">{{ $job->title }}</h5>
-                    <div class="card-description mb-4">
-                        {!! $job->description !!}
-                    </div>
-                    <div class="d-flex justify-content-end gap-2">
-                        <a href="#" class="btn btn-custom-view btn-sm view-btn" data-job="{{ $job }}">View</a>
-                        <a href="#" class="btn btn-custom-apply btn-sm">Apply Now</a>
+    <div class="job-listing">
+        @if($jobs->count() > 0)
+        <div class="row">
+            @foreach($jobs as $job)
+            <div class="col-md-4 mt-4">
+                <div class="card card-custom h-100">
+                    <div class="card-body bg-white">
+                        <h5 class="card-title-custom mb-3">{{ $job->title }}</h5>
+                        <div class="card-description mb-4">
+                            {!! $job->description !!}
+                        </div>
+                        <div class="d-flex justify-content-end gap-2">
+                            <a href="#" class="btn btn-custom-view btn-sm view-btn" data-job="{{ $job }}">View</a>
+                            <a href="#" class="btn btn-custom-apply btn-sm">Apply Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
-        @endforeach
+        @else
+        <div class="alert alert-info text-center">
+            No Jobs Available
+        </div>
+        @endif
+        @if($jobs->total() > 12)
+            <div class="mt-4">
+                Showing {{ $jobs->firstItem() }} to {{ $jobs->lastItem() }} of {{ $jobs->total() }} entries
+                {{ $jobs->links() }}
+            </div>
+        @endif
     </div>
-    @else
-    <div class="alert alert-info text-center">
-        No Jobs Available
-    </div>
-    @endif
-    @if($jobs->count() > 10)
-    <div class="d-flex justify-content-center align-items-center">
-        {{ $jobs->links() }}
-    </div>
-    @endif
 
     <!-- Job Detail Modal -->
     <div class="modal fade" id="jobDetailModal" tabindex="-1" aria-labelledby="jobDetailModalLabel" aria-hidden="true">

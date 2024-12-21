@@ -30,6 +30,12 @@
     font-size: 1.3rem;
     font-weight: bold;
     color: #6E9400;
+    height: 1.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .card-description {

@@ -16,7 +16,7 @@
                 <div class="filters-container">
                     <div class="filter-item">
                         <label for="title">Title</label>
-                        <input type="text" name="title" id="title" class="form-control" value="{{ request()->title }}">
+                        <input type="text" name="title" id="title" class="form-control" value="{{ request()->title }}" placeholder="Enter Title">
                     </div>
                     <div class="filter-item">
                         <label for="date">Created Date</label>
@@ -26,8 +26,8 @@
                         <label for="status">Status</label>
                         <select name="status" id="status" class="form-control">
                             <option value="" selected>Select Status</option>
-                            <option value="1" {{ request()->status == '1' ? 'selected' : '' }}>Active</option>
-                            <option value="0" {{ request()->status == '0' ? 'selected' : '' }}>Inactive</option>
+                            <option value="active" {{ request()->status == 'active' ? 'selected' : '' }}>Active</option>
+                            <option value="inactive" {{ request()->status == 'inactive' ? 'selected' : '' }}>Inactive</option>
                         </select>
                     </div>
                     <div class="filter-item">
@@ -95,9 +95,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="d-flex justify-content-center mt-3">
-                {{ $jobs->appends(request()->query())->links() }}
-            </div>
+            @if($jobs->total() > 10)
+                <div class="mt-3">
+                    Showing {{ $jobs->firstItem() }} to {{ $jobs->lastItem() }} of {{ $jobs->total() }} entries
+                    {{ $jobs->appends(request()->query())->links() }}
+                </div>
+            @endif
         </div>
     </div>
 </div>

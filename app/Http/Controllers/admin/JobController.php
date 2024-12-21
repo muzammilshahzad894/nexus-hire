@@ -23,12 +23,16 @@ class JobController extends Controller
                 $jobs = $jobs->whereDate('created_at', $request->created_date);
             }
             if (isset($request->status) && !empty($request->status)) {
-                $jobs = $jobs->where('status', $request->status);
+                if($request->status == 'active') {
+                    $jobs = $jobs->where('status', 1);
+                } else {
+                    $jobs = $jobs->where('status', 0);
+                }
             }
             if (isset($request->sort) && !empty($request->sort)) {
                 $jobs = $jobs->orderBy('created_at', $request->sort);
             } else {
-                $jobs = $jobs->orderBy('created_at', 'desc');
+                $jobs = $jobs->orderBy('created_at', 'asc');
             }
             $jobs = $jobs->paginate(10);
             return view('admin.jobs.index', compact('jobs'));
