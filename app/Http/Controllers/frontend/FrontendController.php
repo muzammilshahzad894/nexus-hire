@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers\frontend;
 
+use Illuminate\Support\Facades\Log;
+use Exception;
 use App\Http\Controllers\Controller;
+use App\Models\Job;
 
 class FrontendController extends Controller
 {
@@ -23,6 +26,12 @@ class FrontendController extends Controller
     
     public function jobboard()
     {
-        return view('frontend.jobboard');
+        try {
+            $jobs = Job::where('status', '1')->paginate(10);
+            return view('frontend.jobboard', compact('jobs'));
+        } catch (Exception $e) {
+            Log::error(__CLASS__ . '::' . __LINE__ . ' Exception: ' . $e->getMessage());
+            return redirect()->back()->with('error', 'Something went wrong');
+        }
     }
 }

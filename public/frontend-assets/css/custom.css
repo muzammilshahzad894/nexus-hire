@@ -142,10 +142,10 @@ li{
 } 
 
 
-li::before{ 
+/* li::before{ 
     padding-right: 1rem;
     content: "\00BB"; 
-} 
+}  */
 
 
  /* Team section */
