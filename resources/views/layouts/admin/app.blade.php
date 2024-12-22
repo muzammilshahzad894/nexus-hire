@@ -221,6 +221,8 @@
 
         var g_readTerms = false;
     </script>
+    
+    @yield('javascript')
 
     <script>
         function JobickCarousel() {

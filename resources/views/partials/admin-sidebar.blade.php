@@ -13,6 +13,12 @@
                     <span class="nav-text">Jobs</span>
                 </a>
             </li>
+            <li class="{{ request()->routeIs('admin.job-applications') ? 'mm-active' : '' }}">
+                <a href="{{ route('admin.job-applications') }}" class="" aria-expanded="false">
+                    <i class="fa fa-briefcase"></i>
+                    <span class="nav-text">Job Applications</span>
+                </a>
+            </li>
         </ul>
     </div>
 </div>

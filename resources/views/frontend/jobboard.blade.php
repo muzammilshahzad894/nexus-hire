@@ -27,7 +27,7 @@
                         </div>
                         <div class="d-flex justify-content-end gap-2">
                             <a href="#" class="btn btn-custom-view btn-sm view-btn" data-job="{{ $job }}">View</a>
-                            <a href="#" class="btn btn-custom-apply btn-sm">Apply Now</a>
+                            <a href="#" class="btn btn-custom-apply btn-sm apply-btn" data-job="{{ $job }}">Apply Now</a>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                     <div id="job-detais"></div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal">
+                    <button type="button" class="btn btn-primary apply-btn" data-job="{{ $job }}" id="apply-btn-modal">
                         Apply Now
                     </button>
                 </div>
@@ -77,11 +77,12 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="applyForm" action="https://www.nexushire.ca/jobs/apply" method="POST" enctype="multipart/form-data">
-                        <input type="hidden" name="_token" value="iNWR3xfvxDYsM6I8oxVU7OsuyHZkgCvJYL2KRTIb" autocomplete="off"> <input type="hidden" id="job_id" name="job_id" value="">
+                    <form id="applyForm" action="{{ route('frontend.job.apply') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        <input type="hidden" id="job_id" name="job_id" value="">
                         <div class="mb-3">
-                            <label for="job_role" class="form-label">Job Role</label>
-                            <input type="text" id="job_role" name="job_role" class="form-control text-capitalize" value="" readonly>
+                            <label for="job_title" class="form-label">Job Role</label>
+                            <input type="text" id="job_title" name="job_title" class="form-control text-capitalize" value="" readonly>
                         </div>
                         <div class="mb-3">
                             <label for="name" class="form-label">Full Name</label>
@@ -95,34 +96,24 @@
                             <label for="contact" class="form-label">Contact Number</label>
                             <input type="text" name="contact" class="form-control" required>
                         </div>
-                        <div class="mb-3">
-                            <label for="job_type" class="form-label">Job Type</label>
-                            <select id="job_type" name="job_type" class="form-control" required>
-                                <option value="" disabled selected>Select job type</option>
-                                <option value="full_time">Full-time</option>
-                                <option value="part_time">Part-time</option>
-                            </select>
-                        </div>
 
                         <div class="mb-3">
-                            <label for="shift" class="form-label">Shift</label>
-                            <select id="shift" name="shift" class="form-control" required>
-                                <option value="" disabled selected>Select shift</option>
-                                <option value="weekdays">Weekdays</option>
-                                <option value="weekends">Weekends</option>
-                                <option value="evening">Evening</option>
-                                <option value="overnight">Overnight</option>
-                            </select>
+                            <label for="resume" class="form-label">Upload Resume (pdf,doc,docx)</label>
+                            <input type="file" name="resume" class="form-control" accept=".pdf,.doc,.docx" required>
                         </div>
                         <div class="mb-3">
-                            <label for="resume" class="form-label">Upload Resume (Optional) (pdf,doc,docx)</label>
-                            <input type="file" name="resume" class="form-control">
+                            <label for="message" class="form-label">Why do you want to work with us? (Optional)</label>
+                            <textarea name="message" class="form-control" rows="3"></textarea>
                         </div>
-                        <div class="mb-3">
-                            <label for="why_work_with_us" class="form-label">Why do you want to work with us? (Optional)</label>
-                            <textarea name="why_work_with_us" class="form-control" rows="3"></textarea>
+                        <div class="alert alert-danger alert-dismissible fade show" style="display: none;" id="error-section">
+                            <ul id="error-list"></ul>
+                            <button type="button" class="btn-close" onclick="$('#error-section').hide()"></button>
                         </div>
-                        <button type="submit" class="btn btn-secondary">Submit Application</button>
+                        <div class="alert alert-success alert-dismissible fade show" style="display: none;" id="success-section">
+                            <span id="success-list"></span>
+                            <button type="button" class="btn-close" onclick="$('#success-section').hide()"></button>
+                        </div>
+                        <button type="submit" class="btn btn-secondary" id="submit-application-btn">Submit Application</button>
                     </form>
                 </div>
             </div>
@@ -134,26 +125,13 @@
 @section('javascript')
 <script>
     $(document).ready(function() {
-        // Automatically close the message after 5 seconds
-        setTimeout(function() {
-            $('#success-message').fadeOut('slow', function() {
-                $(this).remove();
-            });
-        }, 5000); // 5000ms = 5 seconds
-    });
-</script>
-<script>
-    $(document).ready(function() {
-        // Handle View Button Click
         $(document).on('click', '.view-btn', function() {
             var job = $(this).data("job");
-            console.log(job);
 
-            // Set job details in the modal
             $("#job-title").html(job.title);
             $("#job-detais").html(job.description);
-
-            // Show the modal
+            
+            $("#apply-btn-modal").data("job", job);
             $('#jobDetailModal').modal('show');
         });
 
@@ -161,10 +139,58 @@
         $(document).on('click', '.apply-btn', function() {
             var job = $(this).data("job");
 
-            // Set job_id in the form
             $("#applyForm #job_id").val(job.id);
-            $("#applyForm #job_role").val(job.job_role);
-
+            $("#applyForm #job_title").val(job.title);
+            
+            if ($('#jobDetailModal').hasClass('show')) {
+                $('#jobDetailModal').modal('hide');
+                
+                setTimeout(function () {
+                    $('#applyModal').modal('show');
+                    hideMessageSections();
+                }, 500);
+            } else {
+                $('#applyModal').modal('show');
+                hideMessageSections();
+            }
+        });
+        
+        function hideMessageSections() {
+            $('#success-list').html('');
+            $('#error-list').html('');
+            $('#success-section').hide();
+            $('#error-section').hide();
+        }
+        
+        // when applyForm is submitted then prevent the default form submission and submit the form using ajax and show the response
+        $('#applyForm').submit(function(e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+            $('#submit-application-btn').html('Submitting...').attr('disabled', true);
+            $.ajax({
+                url: $(this).attr('action'),
+                type: 'POST',
+                data: formData,
+                success: function(response) {
+                    $('#success-list').html(response.message);
+                    $('#success-section').show();
+                    $('#submit-application-btn').html('Submit Application').attr('disabled', false);
+                    $('#applyForm')[0].reset();
+                },
+                error: function(response) {
+                    var errors = response.responseJSON.errors;
+                    var errorList = '';
+                    $.each(errors, function(key, value) {
+                        errorList += '<li>' + value + '</li>';
+                    });
+                    $('#error-list').html(errorList);
+                    $('#error-section').show();
+                    $('#submit-application-btn').html('Submit Application').attr('disabled', false);
+                },
+                cache: false,
+                contentType: false,
+                processData: false
+            });
         });
     });
 </script>

@@ -5,6 +5,7 @@ use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\AdminLoginController;
 use App\Http\Controllers\admin\ProfileController;
 use App\Http\Controllers\admin\JobController;
+use App\Http\Controllers\admin\JobApplicationController;
 
 // check if user is already logged in then redirect to dashboard
 Route::middleware(['guest'])->group(function () {
@@ -30,5 +31,8 @@ Route::middleware(['admin'])->group(function () {
             Route::post('/update/{id}', [JobController::class, 'update'])->name('admin.jobs.update');
             Route::get('/delete/{id}', [JobController::class, 'delete'])->name('admin.jobs.delete');
         });
+        
+        Route::get('/job-applications', [JobApplicationController::class, 'index'])->name('admin.job-applications');
+        Route::get('/job-application/delete/{id}', [JobApplicationController::class, 'delete'])->name('admin.job-application.delete');
     });
 });
