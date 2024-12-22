@@ -166,7 +166,10 @@
         $('#applyForm').submit(function(e) {
             e.preventDefault();
             var formData = new FormData(this);
-            $('#submit-application-btn').html('Submitting...').attr('disabled', true);
+            $('#submit-application-btn').html(`
+                <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                Submitting...
+            `).attr('disabled', true);
             $.ajax({
                 url: $(this).attr('action'),
                 type: 'POST',
