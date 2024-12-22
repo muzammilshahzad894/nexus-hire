@@ -17,41 +17,57 @@
                     <h4 class="text-uppercase text-primary">Let’s Connect</h4>
                     <h1 class="display-3 text-capitalize mb-3">Send Your Message</h1>
                 </div>
-                <form action="#" method="POST" enctype="multipart/form-data">
+                <form method="post" action="{{ route('frontend.contactPost') }}" enctype="multipart/form-data" onsubmit="document.getElementById('submit-btn').disabled = true; document.getElementById('submit-btn').innerHTML = 'Sending...';">
                     @csrf
+                    <!-- form message -->
+                    <div class="row">
+                        <div class="col-12">
+                            @include('partials.messages')
+                            @if($errors->any())
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            @endif
+                        </div>
+                    </div>
                     <div class="row g-4">
                         <div class="col-lg-12 col-xl-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control border-0" name="name" id="name" placeholder="Your Name">
+                                <input type="text" class="form-control border-0" name="name" id="name" placeholder="Your Name *" required>
                                 <label for="name">Your Name</label>
                             </div>
                         </div>
                         <div class="col-lg-12 col-xl-6">
                             <div class="form-floating">
-                                <input type="email" class="form-control border-0" name="email" id="email" placeholder="Your Email">
+                                <input type="email" class="form-control border-0" name="email" id="email" placeholder="Your Email *" required>
                                 <label for="email">Your Email</label>
                             </div>
                         </div>
                         <div class="col-lg-12 col-xl-6">
                             <div class="form-floating">
-                                <input type="phone" class="form-control border-0" name="phone" id="phone" placeholder="Phone">
-                                <label for="phone">Your Phone</label>
+                                <input type="phone" class="form-control border-0" name="phone" id="phone" placeholder="Your Number *" required>
+                                <label for="phone">Your Number</label>
                             </div>
                         </div>
-                        <!-- <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control border-0" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div> -->
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control border-0" name="subject" id="subject" placeholder="Subject *" required>
+                                <label for="subject">Subject</label>
+                            </div>
+                        </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="form-control border-0" placeholder="Leave a message here" name="message" id="message" style="height: 175px"></textarea>
+                                <textarea class="form-control border-0" placeholder="Leave a message here" name="message" id="message" style="height: 175px" required></textarea>
                                 <label for="message">Message</label>
                             </div>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary w-100 py-3">Send Message</button>
+                            <button class="btn btn-primary w-100 py-3" id="submit-btn">Send Message</button>
                         </div>
                     </div>
                 </form>
