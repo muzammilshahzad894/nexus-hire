@@ -579,10 +579,9 @@
 		<div class="owl-carousel testimonial-carousel wow " data-wow-delay="0.3s">
 			<!-- Testimonial 1 -->
 			<div class="testimonial-item text-center p-4">
-				<p>“I really appreciated the outstanding time, work, and effort that the entire staff put into findingme an excellent job placement. Professional, Dependable, Good people to work&amp;nbsp;with, thank youvery&amp;nbsp;much!!!”</p>
-				<!-- <div class="d-flex justify-content-center mb-4">
-                    <img src="https://www.nexushire.ca/uploads/testimonial/1727319202.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="Client Image">
-                </div> -->
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, consequatur impedit. Quaerat voluptate asperiores, praesentium ratione maiores ea iusto impedit odio adipisci enim, et iure nostrum quo. Iure, iste! Doloribus!
+				</p>
 				<div class="d-block">
 					<h4 class="text-dark">Prabhjot Gill</h4>
 					<p class="m-0 pb-3">Business Analyst</p>
@@ -597,10 +596,9 @@
 			</div>
 			<!-- Testimonial 1 -->
 			<div class="testimonial-item text-center p-4">
-				<p>“I am thrilled with my new job and this is largely due to the care taken by NexusHire to find me aposition which closely matched my skills, personality and the conditions I had described asbeing my “ideal”. In my opinion, NexusHire offers a very professional service, and all the staffdisplay a strong focus on customer service. I would not hesitate to recommend them to anyemployer looking for staff or to anyone seeking employment.&quot;</p>
-				<!-- <div class="d-flex justify-content-center mb-4">
-                    <img src="https://www.nexushire.ca/uploads/testimonial/1727774388.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="Client Image">
-                </div> -->
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem asperiores maxime vero totam facilis ea possimus voluptatibus velit eveniet repellendus eius recusandae eligendi dolorem quae, consectetur sunt accusamus cupiditate beatae.
+				</p>
 				<div class="d-block">
 					<h4 class="text-dark">Christine</h4>
 					<p class="m-0 pb-3">Warehouse Operations</p>
@@ -615,10 +613,9 @@
 			</div>
 			<!-- Testimonial 1 -->
 			<div class="testimonial-item text-center p-4">
-				<p>NexusHire made my recruiting life completely painless and quite enjoyable! Recruitment is soincredibly important to the success of my team but it’s the last thing I ever have time in mycalendar to complete. I am grateful to have them as a partner.</p>
-				<!-- <div class="d-flex justify-content-center mb-4">
-                    <img src="https://www.nexushire.ca/uploads/testimonial/1727773988.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="Client Image">
-                </div> -->
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nobis voluptatum magni distinctio voluptates, pariatur adipisci rem minima, dolorem repudiandae id consequuntur voluptatibus voluptatem commodi temporibus ipsa in. Cupiditate, consequatur?
+				</p>
 				<div class="d-block">
 					<h4 class="text-dark">Tammy</h4>
 					<p class="m-0 pb-3">Plant Manager</p>
@@ -633,10 +630,9 @@
 			</div>
 			<!-- Testimonial 1 -->
 			<div class="testimonial-item text-center p-4">
-				<p>After trying multiple agencies, I reached out to NexusHire and stopped looking elsewhere. Thecandidates are head &amp;amp; shoulders above the competition. The team’s attentiveness to my staffing needs make me feel prioritized, also to mention their billing is perfectly consistent.</p>
-				<!-- <div class="d-flex justify-content-center mb-4">
-                    <img src="https://www.nexushire.ca/uploads/testimonial/1727774173.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="Client Image">
-                </div> -->
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. At inventore debitis eos, voluptates animi delectus aut corporis modi iusto et quas maiores non. Minus corporis porro numquam vero soluta ratione?
+				</p>
 				<div class="d-block">
 					<h4 class="text-dark">Rebecca Fisher</h4>
 					<p class="m-0 pb-3">V.P Human resources</p>
@@ -651,10 +647,9 @@
 			</div>
 			<!-- Testimonial 1 -->
 			<div class="testimonial-item text-center p-4">
-				<p>NexusHire team is always very responsive when I call. I always feel like my request will receiveimmediate attention, and this means a lot to me. I’ve never felt like I’m going on the backburner. I will continue to use their services for all my needs.</p>
-				<!-- <div class="d-flex justify-content-center mb-4">
-                    <img src="https://www.nexushire.ca/uploads/testimonial/1727774344.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="Client Image">
-                </div> -->
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos maxime, tempore ipsum debitis corporis sunt voluptas quia excepturi quo magni nemo, ut asperiores accusantium eum nostrum earum. Minus, soluta nisi.
+				</p>
 				<div class="d-block">
 					<h4 class="text-dark">S. William</h4>
 					<p class="m-0 pb-3">Director</p>
@@ -669,10 +664,9 @@
 			</div>
 			<!-- Testimonial 1 -->
 			<div class="testimonial-item text-center p-4">
-				<p>“I have utilized NexusHire staffing services for almost a year now and am extremely pleased withthe professionalism of the staff and the quality of the candidates. It is refreshing to work withan agency that listens to your needs and supplies candidates that perfectly match therequirements. I thoroughly enjoyed working with everyone at NexusHire, hearing the smiles onthe phone and knowing that customer service is superior.”</p>
-				<!-- <div class="d-flex justify-content-center mb-4">
-                    <img src="https://www.nexushire.ca/uploads/testimonial/1727774402.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="Client Image">
-                </div> -->
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aut perferendis beatae libero cupiditate accusantium ea laborum debitis atque. Non minima magni animi voluptatem provident perferendis dignissimos numquam facere corrupti?
+				</p>
 				<div class="d-block">
 					<h4 class="text-dark">Peter Mayer</h4>
 					<p class="m-0 pb-3">HR Manager</p>
@@ -685,24 +679,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- Testimonial 2 -->
-			<!-- <div class="testimonial-item text-center p-4">
-                <p>"Thanks to NexusHire, our team coordination has improved significantly, and we're able to manage shifts more effectively than ever."</p>
-                <div class="d-flex justify-content-center mb-4">
-                    <img src="https://www.nexushire.ca/img/testimonial-2.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="Client Image">
-                </div>
-                <div class="d-block">
-                    <h4 class="text-dark">John Miller</h4>
-                    <p class="m-0 pb-3">Team Lead</p>
-                    <div class="d-flex justify-content-center text-secondary">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-            </div> -->
 		</div>
 	</div>
 </div> <!-- Testimonial End -->

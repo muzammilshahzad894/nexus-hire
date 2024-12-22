@@ -220,9 +220,9 @@
 					<div class="footer-item d-flex flex-column">
 						<h4 class="text-white mb-4">Contact Info</h4>
 
-						<a href="https://maps.app.goo.gl/gAhw9R2UGHbXwDWF9"><i class="fa fa-map-marker-alt me-2"></i> 1122 3 St SE Ste 1906 Calgary, AB T2G 0E7</a>
-						<a href="mailto:info@nexushire.ca"><i class="fas fa-envelope me-2"></i> info@nexushire.ca</a>
-						<a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +1 (587)-200-2325</a>
+						<a href="#"><i class="fa fa-map-marker-alt me-2"></i> 1234, Street Name, City Name, Country Name</a>
+						<a href="mailto:Nexushireltd@gmail.com"><i class="fas fa-envelope me-2"></i> Nexushireltd@gmail.com</a>
+						<a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +1 (123)-456-789</a>
 					</div>
 				</div>
 			</div>
