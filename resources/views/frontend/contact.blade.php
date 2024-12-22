@@ -79,7 +79,7 @@
                             <i class="fas fa-map-marker-alt fa-2x text-secondary me-4"></i>
                             <div>
                                 <h4>Address</h4>
-                                <p class="mb-0">1122 3 St SE Ste 1906 Calgary, AB T2G 0E7</p>
+                                <p class="mb-0">1234, Street Name, City Name, Country Name</p>
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                             <i class="fas fa-envelope fa-2x text-secondary me-4"></i>
                             <div>
                                 <h4>Mail Us</h4>
-                                <p class="mb-0">info@nexushire.ca</p>
+                                <p class="mb-0">Nexushireltd@gmail.com</p>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                             <i class="fa fa-phone-alt fa-2x text-secondary me-4"></i>
                             <div>
                                 <h4>Telephone</h4>
-                                <p class="mb-0">+1 (587)-200-2325</p>
+                                <p class="mb-0">+1 (123)-456-789</p>
                             </div>
                         </div>
                     </div>

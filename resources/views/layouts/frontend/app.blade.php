@@ -23,8 +23,7 @@
 	<link href="{{ asset('frontend-assets/lib/animate/animate.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('frontend-assets/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 
-	<link rel="icon" href="{{ asset('frontend-assets/images/favicon.ico') }}" type="image/x-icon">
-	<link rel="shortcut icon" href="{{ asset('frontend-assets/images/favicon.ico') }}" type="image/x-icon">
+	<link rel="icon" href="{{ asset('nexus-logo-favicon.PNG') }}" type="image/x-icon">
 	<!-- Customized Bootstrap Stylesheet -->
 	<link href="{{ asset('frontend-assets/css/bootstrap.min.css') }}" rel="stylesheet">
 
