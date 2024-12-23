@@ -90,7 +90,7 @@ Default CSS
 }
 
 .theme-dark p a:hover {
-  color: #fd1616 !important;
+  color: #A9C308 !important;
 }
 
 .theme-dark a {
@@ -106,7 +106,7 @@ Default CSS
 }
 
 .theme-dark .h1 a:hover, .theme-dark .h2 a:hover, .theme-dark .h3 a:hover, .theme-dark .h4 a:hover, .theme-dark .h5 a:hover, .theme-dark .h6 a:hover, .theme-dark h1 a:hover, .theme-dark h2 a:hover, .theme-dark h3 a:hover, .theme-dark h4 a:hover, .theme-dark h5 a:hover, .theme-dark h6 a:hover {
-  color: #fd1616 !important;
+  color: #A9C308 !important;
 }
 
 .theme-dark .bg-color {
@@ -235,7 +235,7 @@ Default CSS
 }
 
 .theme-dark .job-post-from .form-group .nice-select .option.focus, .theme-dark .job-post-from .form-group .nice-select .option:hover {
-  background-color: #fd1616;
+  background-color: #A9C308;
 }
 
 .theme-dark .job-sidebar {
@@ -267,7 +267,7 @@ Default CSS
 }
 
 .theme-dark .counter-area .counter-text h2 {
-  color: #fd1616 !important;
+  color: #A9C308 !important;
 }
 
 .theme-dark .counter-section {
@@ -365,7 +365,7 @@ Default CSS
 }
 
 .theme-dark .signin-form .other-signin ul li a i:hover {
-  background-color: #fd1616;
+  background-color: #A9C308;
 }
 
 .theme-dark .reset-form {
@@ -460,7 +460,7 @@ Default CSS
 }
 
 .theme-dark .signup-form .other-signup ul li a i:hover {
-  background-color: #fd1616;
+  background-color: #A9C308;
 }
 
 .theme-dark .testimonial-items .testimonial-text {
@@ -484,7 +484,7 @@ Default CSS
 }
 
 .theme-dark .blog-widget.blog-category ul li a:hover {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 .theme-dark .blog-widget.blog-tags ul li a {
@@ -506,7 +506,7 @@ Default CSS
 }
 
 .theme-dark .blog-dedails-text .details-tag ul li a:hover {
-  background-color: #fd1616;
+  background-color: #A9C308;
 }
 
 .theme-dark .blog-dedails-text .comment-form {
@@ -573,7 +573,7 @@ Default CSS
 }
 
 .theme-dark .find-form .nice-select .option.focus, .theme-dark .find-form .nice-select .option:hover {
-  background-color: #fd1616;
+  background-color: #A9C308;
 }
 
 .theme-dark .contact-card {

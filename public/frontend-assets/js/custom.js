@@ -34,7 +34,7 @@ jQuery(function ($) {
                 items:3
             },
             1200: {
-                items:4
+                items:3
             }
         }
     })

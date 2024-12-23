@@ -191,7 +191,7 @@ h3 {
 }
 
 .buy-now-btn:hover {
-  background-color: #fd1616;
+  background-color: #A9C308;
   color: #ffffff;
 }
 
@@ -199,7 +199,7 @@ h3 {
   font-size: 18px;
   font-weight: 500;
   font-family: "Catamaran", sans-serif;
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
   margin-right: 15px;
   border: 1px solid transparent;
@@ -248,7 +248,7 @@ h3 {
 }
 
 .navbar-area .main-nav .navbar .navbar-nav .nav-item .nav-link.active {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 .navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu {
@@ -282,7 +282,7 @@ h3 {
   font-size: 16px;
   font-weight: 600;
   padding: 5px 20px;
-  background: #fd1616;
+  background: #A9C308;
   border-radius: 5px;
 }
 
@@ -298,7 +298,7 @@ h3 {
 }
 
 .navbar-area .main-nav .navbar .other-option .signup-btn:hover {
-  color: #fd1616;
+  color: #A9C308;
   background: none;
 }
 
@@ -401,7 +401,7 @@ h3 {
   border-color: unset;
   -webkit-box-shadow: unset;
           box-shadow: unset;
-  border: 1px solid #fd1616;
+  border: 1px solid #A9C308;
 }
 
 .banner-section .banner-content .banner-form .form-group .form-control:focus::-webkit-input-placeholder {
@@ -453,7 +453,7 @@ h3 {
 }
 
 .banner-section .banner-content .banner-form .find-btn {
-  background: #fd1616;
+  background: #A9C308;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 600;
@@ -496,7 +496,7 @@ h3 {
 }
 
 .banner-section .banner-content .keyword li a:hover {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 /* Banner CSS End */
@@ -514,7 +514,7 @@ h3 {
 
 .category-card i {
   font-size: 50px;
-  color: #fd1616;
+  color: #A9C308;
   margin-bottom: 25px;
   display: inline-block;
   line-height: 1;
@@ -529,7 +529,7 @@ h3 {
 }
 
 .category-card:hover {
-  border: 1px solid #fd1616;
+  border: 1px solid #A9C308;
   margin-top: -5px;
 }
 
@@ -567,7 +567,7 @@ h3 {
 }
 
 .job-card .job-info h3 a:hover {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 .job-card .job-info ul {
@@ -587,7 +587,7 @@ h3 {
 }
 
 .job-card .job-info ul li a {
-  color: #fd1616;
+  color: #A9C308;
   font-weight: 500;
 }
 
@@ -606,7 +606,7 @@ h3 {
   display: block;
   padding: 5px 10px;
   border-radius: 10px;
-  color: #fd1616;
+  color: #A9C308;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
   margin-bottom: 15px;
@@ -630,7 +630,7 @@ h3 {
 }
 
 .job-card .job-save a i:hover {
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
 }
 
@@ -652,7 +652,7 @@ h3 {
 .job-card:hover {
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
-  border: 1px dashed #fd1616;
+  border: 1px dashed #A9C308;
 }
 
 /* Job Section CSS End */
@@ -690,7 +690,7 @@ h3 {
 }
 
 .use-text span {
-  color: #fd1616;
+  color: #A9C308;
   background: #fdc7c7;
   width: 30px;
   height: 30px;
@@ -707,10 +707,10 @@ h3 {
 
 .use-text i {
   font-size: 50px;
-  color: #fd1616;
+  color: #A9C308;
   background: #ffffff;
   display: inline-block;
-  border: 3px dashed #fd1616;
+  border: 3px dashed #A9C308;
   position: relative;
   width: 150px;
   height: 150px;
@@ -732,7 +732,7 @@ h3 {
 }
 
 .use-text:hover i {
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
 }
 
@@ -740,7 +740,7 @@ h3 {
 /* Top Company CSS Start */
 .company-card {
   text-align: center;
-  border: 1px dashed #fd1616;
+  border: 1px dashed #A9C308;
   padding: 40px 30px;
   margin-bottom: 30px;
   -webkit-transition: 0.5s;
@@ -762,7 +762,7 @@ h3 {
 }
 
 .company-card .company-text .company-btn {
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
   padding: 10px 20px;
   display: inline-block;
@@ -825,7 +825,7 @@ h3 {
 .why-choose-text .media i {
   background: #182441;
   font-size: 30px;
-  color: #fd1616;
+  color: #A9C308;
   width: 60px;
   height: 60px;
   text-align: center;
@@ -859,7 +859,7 @@ h3 {
 }
 
 .counter-area .counter-text h2 {
-  color: #fd1616;
+  color: #A9C308;
   font-size: 45px;
   font-weight: 700;
 }
@@ -880,7 +880,7 @@ h3 {
 /* Why Choose CSS End */
 /* Job Info CSS Start */
 .looking-job {
-  background: #fd1616;
+  background: #A9C308;
   border-radius: 10px;
   padding: 30px;
   margin-bottom: 30px;
@@ -895,7 +895,7 @@ h3 {
 
 .looking-job .media i {
   background: #fbd3d3;
-  color: #fd1616;
+  color: #A9C308;
   width: 55px;
   height: 55px;
   border-radius: 50px;
@@ -992,7 +992,7 @@ h3 {
 }
 
 .recruiting-card .media .media-body a:hover, .recruiting-card .media .media-body a:hover i {
-  color: #fd1616;
+  color: #A9C308;
   letter-spacing: 1px;
 }
 
@@ -1043,9 +1043,9 @@ h3 {
 }
 
 .price-card .price-top i {
-  color: #fd1616;
+  color: #A9C308;
   font-size: 30px;
-  border: 1px dashed #fd1616;
+  border: 1px dashed #A9C308;
   width: 65px;
   height: 65px;
   line-height: 65px;
@@ -1087,7 +1087,7 @@ h3 {
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
-  background: #fd1616;
+  background: #A9C308;
   padding: 12px 30px;
   display: inline-block;
 }
@@ -1132,7 +1132,7 @@ h3 {
 }
 
 .condidate-item .candidate-social a i {
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
   width: 35px;
   height: 35px;
@@ -1208,8 +1208,8 @@ h3 {
 }
 
 .condidate-item .candidate-text .bottom-text a i {
-  color: #fd1616;
-  border: 1px dashed #fd1616;
+  color: #A9C308;
+  border: 1px dashed #A9C308;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -1217,7 +1217,7 @@ h3 {
 }
 
 .condidate-item .candidate-text .bottom-text a i:hover {
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1228,7 +1228,7 @@ h3 {
 }
 
 .condidate-item:hover .candidate-text h3 a {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 .condidate-slider .owl-dots {
@@ -1242,7 +1242,7 @@ h3 {
 }
 
 .condidate-slider .owl-dots .owl-dot.active span {
-  background: #fd1616 !important;
+  background: #A9C308 !important;
 }
 
 /* Candidate CSS End */
@@ -1329,7 +1329,7 @@ h3 {
   bottom: 120px;
   right: 25px;
   color: #ffffff !important;
-  background: #fd1616 !important;
+  background: #A9C308 !important;
   width: 45px !important;
   height: 45px !important;
   line-height: 50px !important;
@@ -1382,7 +1382,7 @@ h3 {
 }
 
 .blog-card .blog-text ul li i {
-  color: #fd1616;
+  color: #A9C308;
   margin-right: 2px;
 }
 
@@ -1397,7 +1397,7 @@ h3 {
 }
 
 .blog-card .blog-text h3 a:hover {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 .blog-card .blog-text p {
@@ -1405,7 +1405,7 @@ h3 {
 }
 
 .blog-card .blog-text .blog-btn {
-  color: #fd1616;
+  color: #A9C308;
   font-size: 16px;
 }
 
@@ -1474,7 +1474,7 @@ h3 {
 }
 
 .footer-area .footer-widget .footer-social a i:hover {
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
 }
 
@@ -1511,13 +1511,13 @@ h3 {
 }
 
 .footer-area .footer-widget ul li a i {
-  color: #fd1616;
+  color: #A9C308;
   top: 2px;
   position: relative;
 }
 
 .footer-area .footer-widget ul li a:hover {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 .footer-area .footer-widget ul li:last-child {
@@ -1533,7 +1533,7 @@ h3 {
 }
 
 .footer-area .footer-widget.footer-info ul li span i {
-  color: #fd1616;
+  color: #A9C308;
   margin-right: 5px;
   position: relative;
   top: 2px;
@@ -1572,7 +1572,7 @@ h3 {
 }
 
 .copyright-text p a:hover {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 /* Footer CSS End */
@@ -1729,7 +1729,7 @@ h3 {
 }
 
 .find-form .find-btn {
-  background: #fd1616;
+  background: #A9C308;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 600;
@@ -1754,7 +1754,7 @@ h3 {
 /* Find Section CSS End */
 /* Why Choose Section CSS Start */
 .choose-card {
-  border: 1px dashed #fd1616;
+  border: 1px dashed #A9C308;
   padding: 36px;
   text-align: center;
   border-radius: 10px;
@@ -1765,7 +1765,7 @@ h3 {
 
 .choose-card i {
   font-size: 40px;
-  color: #fd1616;
+  color: #A9C308;
   background: #fdccc0;
   width: 70px;
   height: 70px;
@@ -1774,7 +1774,7 @@ h3 {
   text-align: center;
   display: inline-block;
   right: -5px;
-  border: 1px dashed #fd1616;
+  border: 1px dashed #A9C308;
   margin-bottom: 25px;
 }
 
@@ -1791,7 +1791,7 @@ h3 {
 }
 
 .choose-card:hover {
-  background: #fd1616;
+  background: #A9C308;
 }
 
 .choose-card:hover i {
@@ -1837,7 +1837,7 @@ h3 {
   text-align: center;
   line-height: 100px;
   border-radius: 100px;
-  border: 1px dashed #fd1616;
+  border: 1px dashed #A9C308;
   position: relative;
   top: -8px;
 }
@@ -1855,7 +1855,7 @@ h3 {
 }
 
 .job-card-two .job-info h3 a:hover {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 .job-card-two .job-info ul {
@@ -1869,7 +1869,7 @@ h3 {
 }
 
 .job-card-two .job-info ul li a {
-  color: #fd1616;
+  color: #A9C308;
   font-weight: 500;
 }
 
@@ -1883,9 +1883,9 @@ h3 {
   background: #fdd6cc;
   display: inline-block;
   padding: 5px 10px;
-  color: #fd1616;
+  color: #A9C308;
   margin-bottom: 10px;
-  border: 1px dashed #fd1616;
+  border: 1px dashed #A9C308;
   font-size: 14px;
 }
 
@@ -1921,7 +1921,7 @@ h3 {
 }
 
 .counter-section .counter-text i {
-  color: #fd1616;
+  color: #A9C308;
   font-size: 60px;
 }
 
@@ -1970,7 +1970,7 @@ h3 {
 }
 
 .testimonial-slider-two .testimonial-items:hover .testimonial-text {
-  background: #fd1616;
+  background: #A9C308;
 }
 
 .testimonial-slider-two .testimonial-items:hover .testimonial-text i, .testimonial-slider-two .testimonial-items:hover .testimonial-text p {
@@ -1991,7 +1991,7 @@ h3 {
 }
 
 .testimonial-slider-two .owl-prev:hover, .testimonial-slider-two .owl-next:hover {
-  background: #fd1616 !important;
+  background: #A9C308 !important;
   color: #ffffff !important;
 }
 
@@ -2017,7 +2017,7 @@ h3 {
 .banner-style-three .banner-text span {
   font-size: 18px;
   font-weight: 600;
-  color: #fd1616;
+  color: #A9C308;
   margin-bottom: 20px;
   display: inline-block;
 }
@@ -2040,12 +2040,12 @@ h3 {
 }
 
 .banner-style-three .banner-text .theme-btn .default-btn:hover {
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
 }
 
 .banner-style-three .banner-text .theme-btn .active {
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
 }
 
@@ -2058,7 +2058,7 @@ h3 {
 .category-item {
   position: relative;
   padding-left: 100px;
-  border: 1px dashed #fd1616;
+  border: 1px dashed #A9C308;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 30px;
@@ -2075,10 +2075,10 @@ h3 {
   line-height: 70px;
   text-align: center;
   border-radius: 50px;
-  color: #fd1616;
+  color: #A9C308;
   left: 15px;
   top: 9px;
-  border: 1px dashed #fd1616;
+  border: 1px dashed #A9C308;
 }
 
 .category-item h3 {
@@ -2096,7 +2096,7 @@ h3 {
 }
 
 .category-item:hover {
-  background: #fd1616;
+  background: #A9C308;
 }
 
 .category-item:hover h3, .category-item:hover p {
@@ -2162,7 +2162,7 @@ h3 {
   line-height: 85px;
   background-color: #ffffff;
   border-radius: 50%;
-  color: #fd1616;
+  color: #A9C308;
   position: relative;
   z-index: 1;
 }
@@ -2238,7 +2238,7 @@ h3 {
 }
 
 .browse-job .browse-jobs-text .app-btn .app-store, .browse-job .browse-jobs-text .app-btn .play-store {
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
   position: relative;
   display: inline-block;
@@ -2270,7 +2270,7 @@ h3 {
 }
 
 .browse-job .browse-jobs-text .app-btn .app-store.active:hover, .browse-job .browse-jobs-text .app-btn .play-store.active:hover {
-  background: #fd1616;
+  background: #A9C308;
 }
 
 .browse-job .browse-job-img {
@@ -2282,7 +2282,7 @@ h3 {
 /* Browser CSS End */
 /* Subscribe CSS Start */
 .subscribe-section {
-  background: #fd1616;
+  background: #A9C308;
   padding: 80px 0;
 }
 
@@ -2326,7 +2326,7 @@ h3 {
 }
 
 .subscribe-section .newsletter-form .sub-btn:hover {
-  background: #fd1616;
+  background: #A9C308;
   border: 1px solid #ffffff;
 }
 
@@ -2417,7 +2417,7 @@ h3 {
 }
 
 .how-works .media i {
-  color: #fd1616;
+  color: #A9C308;
   background: #fbd3d3;
   font-size: 35px;
   width: 60px;
@@ -2425,7 +2425,7 @@ h3 {
   text-align: center;
   line-height: 60px;
   border-radius: 50px;
-  border: 1px dashed #fd1616;
+  border: 1px dashed #A9C308;
 }
 
 .how-works .media:last-child {
@@ -2507,7 +2507,7 @@ h3 {
 /* Banner CSS End */
 /* Category CSS Start */
 .category-style-three .category-card {
-  background: #fd1616;
+  background: #A9C308;
 }
 
 .category-style-three .category-card:hover {
@@ -2540,7 +2540,7 @@ h3 {
 }
 
 .choose-style-two .why-choose-text .media i {
-  color: #fd1616;
+  color: #A9C308;
   background: none;
   font-size: 50px;
   top: 10px;
@@ -2668,7 +2668,7 @@ h3 {
 }
 
 .page-title ul li a:hover {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 .page-title.title-bg1 {
@@ -2699,7 +2699,7 @@ h3 {
   content: '';
   width: 100%;
   height: 10px;
-  background: #fd1616;
+  background: #A9C308;
   left: 0;
   top: -50%;
   right: 0;
@@ -2813,7 +2813,7 @@ h3 {
 }
 
 .job-post-from .post-btn {
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -2847,7 +2847,7 @@ h3 {
   line-height: 50px;
   padding: 0;
   background: #ffffff;
-  color: #fd1616;
+  color: #A9C308;
   font-weight: 600;
   font-size: 17px;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
@@ -2895,7 +2895,7 @@ h3 {
   line-height: 50px;
   padding: 0;
   background: #ffffff;
-  color: #fd1616;
+  color: #A9C308;
   font-weight: 600;
   font-size: 17px;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
@@ -2965,7 +2965,7 @@ h3 {
 }
 
 .job-details-text .job-card .job-info span {
-  color: #fd1616;
+  color: #A9C308;
   font-size: 16px;
   font-weight: 500;
 }
@@ -3099,7 +3099,7 @@ h3 {
 }
 
 .job-sidebar ul li a:hover {
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
 }
 
@@ -3175,7 +3175,7 @@ h3 {
 }
 
 .candidate-card .candidate-text h3 a:hover {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 .candidate-card .candidate-text ul {
@@ -3195,8 +3195,8 @@ h3 {
 }
 
 .candidate-card .candidate-social a i {
-  border: 1px solid #fd1616;
-  color: #fd1616;
+  border: 1px solid #A9C308;
+  color: #A9C308;
   width: 25px;
   height: 25px;
   line-height: 25px;
@@ -3258,7 +3258,7 @@ h3 {
 
 .candidate-profile ul li a i {
   margin-right: 5px;
-  color: #fd1616;
+  color: #A9C308;
 }
 
 .candidate-profile .candidate-social a {
@@ -3361,7 +3361,7 @@ h3 {
   line-height: 50px;
   padding: 0;
   background: #ffffff;
-  color: #fd1616;
+  color: #A9C308;
   font-weight: 600;
   font-size: 17px;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
@@ -3440,12 +3440,12 @@ h3 {
 }
 
 .account-information ul li a:hover {
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
 }
 
 .account-information ul li a.active {
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
 }
 
@@ -3488,7 +3488,7 @@ h3 {
 
 .account-details form .account-btn {
   font-size: 16px;
-  background: #fd1616;
+  background: #A9C308;
   padding: 5px 30px;
   color: #ffffff;
   margin-top: 10px;
@@ -3557,7 +3557,7 @@ h3 {
 }
 
 .resume-area .resume-thumb-area .social-links a i:hover {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 .resume-area .resume-content {
@@ -3618,7 +3618,7 @@ h3 {
 .resume-area .resume-content.education-text .education-info span::before {
   position: absolute;
   content: '';
-  background: #fd1616;
+  background: #A9C308;
   width: 8px;
   height: 8px;
   top: 7px;
@@ -3652,7 +3652,7 @@ h3 {
 .resume-area .resume-content.experience-text .experience-info span::before {
   position: absolute;
   content: '';
-  background: #fd1616;
+  background: #A9C308;
   width: 8px;
   height: 8px;
   top: 7px;
@@ -3745,7 +3745,7 @@ h3 {
 }
 
 .signin-form .signin-btn button:hover {
-  background: #fd1616;
+  background: #A9C308;
 }
 
 .signin-form .other-signin span {
@@ -3791,7 +3791,7 @@ h3 {
 }
 
 .signin-form .create-btn a:hover {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 .signin-form .create-btn a i {
@@ -3855,7 +3855,7 @@ h3 {
 }
 
 .signup-form .signup-btn button:hover {
-  background: #fd1616;
+  background: #A9C308;
 }
 
 .signup-form .other-signup span {
@@ -3901,7 +3901,7 @@ h3 {
 }
 
 .signup-form .create-btn a:hover {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 .signup-form .create-btn a i {
@@ -3959,7 +3959,7 @@ h3 {
 }
 
 .reset-form .reset-btn button:hover {
-  background: #fd1616;
+  background: #A9C308;
 }
 
 /*---------- Reset Password CSS End ----------*/
@@ -4069,7 +4069,7 @@ h3 {
   line-height: 50px;
   padding: 0;
   background: #ffffff;
-  color: #fd1616;
+  color: #A9C308;
   font-weight: 600;
   font-size: 17px;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
@@ -4163,7 +4163,7 @@ h3 {
   line-height: 50px;
   padding: 0;
   background: #ffffff;
-  color: #fd1616;
+  color: #A9C308;
   font-weight: 600;
   font-size: 17px;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
@@ -4255,7 +4255,7 @@ h3 {
 }
 
 .blog-widget.blog-search form .form-group button:hover {
-  background: #fd1616;
+  background: #A9C308;
 }
 
 .blog-widget .popular-post {
@@ -4291,7 +4291,7 @@ h3 {
 }
 
 .blog-widget .popular-post .info h4 a:hover {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 .blog-widget .popular-post:last-child {
@@ -4315,7 +4315,7 @@ h3 {
 }
 
 .blog-widget.blog-category ul li a:hover {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 .blog-widget.blog-category ul li span {
@@ -4342,7 +4342,7 @@ h3 {
 }
 
 .blog-widget.blog-tags ul li a:hover {
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
   border: 1px dashed transparent;
 }
@@ -4368,7 +4368,7 @@ h3 {
 }
 
 .blog-dedails-text .blog-meta ul li i {
-  color: #fd1616;
+  color: #A9C308;
   margin-right: 2px;
 }
 
@@ -4464,7 +4464,7 @@ h3 {
 .blog-dedails-text .comment-form .comment-btn {
   margin-top: 14px;
   padding: 10px 20px;
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
   -webkit-transition: .8s;
   transition: .8s;
@@ -4515,7 +4515,7 @@ h3 {
 }
 
 .contact-card ul li a:hover {
-  color: #fd1616;
+  color: #A9C308;
 }
 
 .contact-area {
@@ -4547,7 +4547,7 @@ h3 {
 }
 
 .contact-area form .contact-btn {
-  background: #fd1616;
+  background: #A9C308;
   color: #ffffff;
   padding: 12px 30px;
   -webkit-transition: .8s;
@@ -4579,7 +4579,7 @@ h3 {
   right: 30px;
   color: #ffffff;
   font-size: 30px;
-  background: #fd1616;
+  background: #A9C308;
   width: 50px;
   height: 50px;
   text-align: center;

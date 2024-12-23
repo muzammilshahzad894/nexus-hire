@@ -27,6 +27,9 @@
 	<title>Jovie - Job Board & Hiring Portal HTML Template</title>
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="{{ asset('frontend-assets/img/favicon.png') }}">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	
+	@yield('css')
 </head>
 
 <body>
@@ -59,7 +62,7 @@
 		<!-- Menu For Mobile Device -->
 		<div class="mobile-nav">
 			<a href="index.html" class="logo">
-				<img src="{{ asset('frontend-assets/img/logo.png') }}" alt="logo">
+				<img src="{{ asset('frontend-assets/img/logo.png') }}" alt="logo" height="45px" width="90px">
 			</a>
 		</div>
 
@@ -222,7 +225,7 @@
 					<div class="footer-widget">
 						<div class="footer-logo">
 							<a href="index.html">
-								<img src="{{ asset('frontend-assets/img/logo.png') }}" alt="logo">
+								<img src="{{ asset('frontend-assets/img/logo.png') }}" alt="logo" height="80px" width="150px">
 							</a>
 						</div>
 
@@ -362,9 +365,6 @@
 			</div>
 		</div>
 	</footer>
-	<div class="copyright-text text-center">
-		<p>© Jovie is Proudly Owned by <a href="https://hibootstrap.com/" target="_blank">HiBootstrp</a></p>
-	</div>
 	<!-- Footer Section End -->
 
 	<!-- Back To Top Start -->
