@@ -1,265 +1,398 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<html lang="zxx">
 
 <head>
+	<!-- Required meta tags -->
 	<meta charset="utf-8">
-	<title>NexusHire</title>
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<meta content="" name="keywords">
-	<meta content="" name="description">
-
-	<!-- Google Web Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com/">
-	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet">
-
-	<!-- Icon Font Stylesheet -->
-	<link rel="stylesheet" href="{{ asset('frontend-assets/css/all.css') }}" />
-	<link href="{{ asset('frontend-assets/css/bootstrap-icons.css') }}" rel="stylesheet">
-
-	<!-- Libraries Stylesheet -->
-	<link href="{{ asset('frontend-assets/lib/animate/animate.min.css') }}" rel="stylesheet">
-	<link href="{{ asset('frontend-assets/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
-
-	<link rel="icon" href="{{ asset('nexus-logo-favicon.PNG') }}" type="image/x-icon">
-	<!-- Customized Bootstrap Stylesheet -->
-	<link href="{{ asset('frontend-assets/css/bootstrap.min.css') }}" rel="stylesheet">
-
-	<!-- Template Stylesheet -->
-	<link href="{{ asset('frontend-assets/css/style.css') }}" rel="stylesheet">
-
-	<!-- Custom Stylesheet -->
-	<link href="{{ asset('frontend-assets/css/custom.css') }}" rel="stylesheet">
-	
-	@yield('css')
-	
-	<style>
-		.navbar {
-			position: absolute;
-			width: 100%;
-			z-index: 1000;
-		}
-		.navbar:has(.navbar-collapse.show) {
-			background-color: #294E5D;
-		}
-	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{{ asset('frontend-assets/css/bootstrap.min.css') }}">
+	<!-- Owl Carousel CSS -->
+	<link rel="stylesheet" href="{{ asset('frontend-assets/css/owl.carousel.min.css') }}">
+	<!-- Owl Carousel Theme Default CSS -->
+	<link rel="stylesheet" href="{{ asset('frontend-assets/css/owl.theme.default.min.css') }}">
+	<!-- Box Icon CSS-->
+	<link rel="stylesheet" href="{{ asset('frontend-assets/css/boxicons.min.css') }}">
+	<!-- Flaticon CSS-->
+	<link rel="stylesheet" href="{{ asset('frontend-assets/fonts/flaticon/flaticon.css') }}">
+	<!-- Meanmenu CSS -->
+	<link rel="stylesheet" href="{{ asset('frontend-assets/css/meanmenu.css') }}">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="{{ asset('frontend-assets/css/style.css') }}">
+	<!-- Dark CSS -->
+	<link rel="stylesheet" href="{{ asset('frontend-assets/css/dark.css') }}">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="{{ asset('frontend-assets/css/responsive.css') }}">
+	<!-- Title CSS -->
+	<title>Jovie - Job Board & Hiring Portal HTML Template</title>
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="{{ asset('frontend-assets/img/favicon.png') }}">
 </head>
 
 <body>
 
-	<!-- Spinner Start -->
-	<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-		<div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-			<span class="sr-only">Loading...</span>
+	<!-- Pre-loader Start -->
+	<div class="loader-content">
+		<div class="d-table">
+			<div class="d-table-cell">
+				<div class="sk-circle">
+					<div class="sk-circle1 sk-child"></div>
+					<div class="sk-circle2 sk-child"></div>
+					<div class="sk-circle3 sk-child"></div>
+					<div class="sk-circle4 sk-child"></div>
+					<div class="sk-circle5 sk-child"></div>
+					<div class="sk-circle6 sk-child"></div>
+					<div class="sk-circle7 sk-child"></div>
+					<div class="sk-circle8 sk-child"></div>
+					<div class="sk-circle9 sk-child"></div>
+					<div class="sk-circle10 sk-child"></div>
+					<div class="sk-circle11 sk-child"></div>
+					<div class="sk-circle12 sk-child"></div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<!-- Spinner End -->
+	<!-- Pre-loader End -->
 
-	<!-- Navbar & Hero Start -->
-	<div class="container-fluid position-relative p-0">
-		<nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-			<a href="{{ route('frontend.index') }}" class="navbar-brand p-0">
-                <img src="{{ asset('frontend-assets/images/nexus-logo-removebg-preview.PNG') }}" class="logo-image px-1" alt="Logo" />
-				<!-- <h1 class="text-primary d-flex align-items-center">
-					Nexus
-					<img src="{{ asset('frontend-assets/images/Logo.png') }}" class="logo-image px-1" alt="Logo" />
-					ire
-				</h1> -->
+	<!-- Navbar Area Start -->
+	<div class="navbar-area">
+		<!-- Menu For Mobile Device -->
+		<div class="mobile-nav">
+			<a href="index.html" class="logo">
+				<img src="{{ asset('frontend-assets/img/logo.png') }}" alt="logo">
 			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-				<span class="fa fa-bars"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarCollapse">
-				<div class="navbar-nav ms-auto py-0">
-					<a href="{{ route('frontend.index') }}" class="nav-item nav-link {{ request()->routeIs('frontend.index') ? 'active' : '' }}">Home</a>
-					<a href="{{ route('frontend.about') }}" class="nav-link nav-item {{ request()->routeIs('frontend.about') ? 'active' : '' }}">About</a>
-					<a href="{{ route('frontend.jobboard') }}" class="nav-link nav-item {{ request()->routeIs('frontend.jobboard') ? 'active' : '' }}">Job Board</a>
-					<a href="{{ route('frontend.contact') }}" class="nav-item nav-link {{ request()->routeIs('frontend.contact') ? 'active' : '' }}">Contact</a>
-				</div>
-			</div>
-		</nav>
-		<!-- Carousel Start -->
-        @if(request()->routeIs('frontend.index'))
-		<div class="carousel-header">
-			<div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-					<li data-target="#carouselId" data-bs-slide-to="1" class=""></li>
-				</ol>
-				<div class="carousel-inner" role="listbox">
-					<div class="carousel-item active">
-						<img src="{{ asset('frontend-assets/uploads/banners/banner3.JPG') }}" class="img-fluid w-100" alt="NexusHire">
-						<div class="carousel-caption-2">
-							<div class="carousel-caption-2-content" style="max-width: 900px;">
-								<h4 class="text-white text-uppercase fw-bold mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s; letter-spacing: 3px;">NexusHire</h4>
-								<h1 class="display-2 text-capitalize text-white mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.3s" style="animation-delay: 1.3s;">Connecting Talent with Opportunity</h1>
-								<p class="mb-5 fs-5 text-white fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.5s" style="animation-delay: 1.5s;">
-									We specialize in recruiting top talent for both permanent and contract positions. At NexusHire, we prioritize understanding your unique skills, experience, and career goals
-								</p>
-								<div class="carousel-caption-1-content-btn fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.7s" style="animation-delay: 1.7s;">
-									<a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="{{ route('frontend.jobboard') }}">Join Us</a>
-									<a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="{{ route('frontend.about') }}">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- <div class="carousel-item ">
-						<img src="{{ asset('frontend-assets/uploads/banners/1727250534.png') }}" class="img-fluid w-100" alt="NexusHire">
-						<div class="carousel-caption-2">
-							<div class="carousel-caption-2-content" style="max-width: 900px;">
-								<h4 class="text-white text-uppercase fw-bold mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s; letter-spacing: 3px;">NexusHire</h4>
-								<h1 class="display-2 text-capitalize text-white mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.3s" style="animation-delay: 1.3s;">Connecting Talent with Opportunity</h1>
-								<p class="mb-5 fs-5 text-white fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.5s" style="animation-delay: 1.5s;">
-									We specialize in recruiting top talent for both permanent and contract positions. At NexusHire, we prioritize understanding your unique skills, experience, and career goals.
-								</p>
-								<div class="carousel-caption-1-content-btn fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.7s" style="animation-delay: 1.7s;">
-									<a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="#">Join Us</a>
-									<a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="#">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</div> -->
-					<!-- <div class="carousel-item"></div>
-                <img src="./images/banner1.jpg" class="img-fluid w-100" alt="Image">
-                <div class="carousel-caption-2">
-                    <div class="carousel-caption-2-content" style="max-width: 900px;">
-                        <h4 class="text-white text-uppercase fw-bold mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s; letter-spacing: 3px;">NexusHire</h4>
-                        <h1 class="display-2 text-capitalize text-white mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.3s" style="animation-delay: 1.3s;">Connecting Talent with Opportunity</h1>
-                        <p class="mb-5 fs-5 text-white fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.5s" style="animation-delay: 1.5s;">
-                            We specialize in recruiting top talent for both permanent and contract positions. At NexusHire, we prioritize understanding your unique skills, experience, and career goals.
-                        </p>
-                        <div class="carousel-caption-1-content-btn fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.7s" style="animation-delay: 1.7s;">
-                            <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="#">Join Us</a>
-                            <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="#">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-					<!-- <div class="carousel-item">
-                <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
-                <div class="carousel-caption-2">
-                    <div class="carousel-caption-2-content" style="max-width: 900px;">
-                        <h4 class="text-white text-uppercase fw-bold mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">Importance life</h4>
-                        <h1 class="display-2 text-capitalize text-white mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1.3s" style="animation-delay: 1.3s;">Always Want Safe Water For Healthy Life</h1>
-                        <p class="mb-5 fs-5 text-white fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        </p>
-                        <div class="carousel-caption-2-content-btn fadeInRight animated" data-animation="fadeInRight" data-delay="1.7s" style="animation-delay: 1.7s;">
-                            <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="#">Order Now</a>
-                            <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="#">Free Estimate</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-				</div>
-				<!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon btn btn-primary fadeInLeft animated" aria-hidden="true" data-animation="fadeInLeft" data-delay="1.1s" style="animation-delay: 1.3s;"> <i class="fa fa-angle-left fa-3x"></i></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-					<span class="carousel-control-next-icon btn btn-primary fadeInRight animated" aria-hidden="true" data-animation="fadeInLeft" data-delay="1.1s" style="animation-delay: 1.3s;"><i class="fa fa-angle-right fa-3x"></i></span>
-					<span class="visually-hidden">Next</span>
-				</button> -->
-			</div>
 		</div>
-        @endif
-		<!-- Carousel End -->
-	</div>
-	<!-- Navbar & Hero End -->
-     
-    @yield('content')
 
-	<!-- Footer Start -->
-	<div class="container-fluid footer  wow fadeIn" data-wow-delay="0.2s">
-		<div class="container py-5">
-			<div class="row g-5">
-				<div class="col-md-7 col-lg-7 col-xl-3">
-					<div class="footer-item d-flex flex-column">
-						<div class="footer-item">
-							<div class="d-flex justify-content-between align-items-start">
-								<img src="{{ asset('frontend-assets/images/nexus-logo-removebg-preview.PNG') }}" class="logo-image px-1" alt="Logo" style="width: 200px;" />
-							</div>
-							<p class="mb-3">
-								NexusHire Workforce Solutions Inc. is a Canada-based staffing company that specializes in staffing solutions for the administrative, call centre, manufacturing, warehouse and logistics fields. We have multiple branches across Canada, located in Alberta and Ontario.
-							</p>
-						</div>
-						<div class="d-flex align-items-center justify-content-start">
-							<a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
-							<a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter text-white"></i></a>
-							<a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram text-white"></i></a>
-							<a class="btn btn-secondary btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-5 col-lg-5 col-xl-3">
-					<div class="footer-item d-flex flex-column">
-						<h4 class="text-white mb-4">About Us</h4>
-						<a href="{{ route('frontend.index') }}"><i class="fas fa-angle-right me-2"></i> Home</a>
-						<a href="{{ route('frontend.about') }}"><i class="fas fa-angle-right me-2"></i> About</a>
-						<a href="{{ route('frontend.jobboard') }}"><i class="fas fa-angle-right me-2"></i> Job Board</a>
-						<a href="{{ route('frontend.contact') }}"><i class="fas fa-angle-right me-2"></i> Contact us</a>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6 col-xl-3">
-					<div class="footer-item d-flex flex-column">
-						<h4 class="text-white mb-4">Business Hours</h4>
-						<div class="mb-3">
-							<h6 class="text-muted mb-0">Mon - Friday:</h6>
-							<p class="text-white mb-0">
-								08:00 AM
-								to
-								05:00 PM
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6 col-xl-3">
-					<div class="footer-item d-flex flex-column">
-						<h4 class="text-white mb-4">Contact Info</h4>
+		<!-- Menu For Desktop Device -->
+		<div class="main-nav">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<a class="navbar-brand" href="index.html">
+						<img src="{{ asset('frontend-assets/img/logo.png') }}" alt="logo" height="60px" width="120px">
+					</a>
+					<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+						<ul class="navbar-nav m-auto">
+							<li class="nav-item">
+								<a href="#" class="nav-link dropdown-toggle active">Home</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item">
+										<a href="index.html" class="nav-link active">Home One</a>
+									</li>
+									<li class="nav-item">
+										<a href="index-two.html" class="nav-link">Home Two</a>
+									</li>
+									<li class="nav-item">
+										<a href="index-three.html" class="nav-link">Home Three</a>
+									</li>
+									<li class="nav-item">
+										<a href="index-four.html" class="nav-link">Home Four</a>
+									</li>
+									<li class="nav-item">
+										<a href="index-five.html" class="nav-link">Home Five</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="about.html" class="nav-link">About</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link dropdown-toggle">Jobs</a>
 
-						<a href="#"><i class="fa fa-map-marker-alt me-2"></i> 1234, Street Name, City Name, Country Name</a>
-						<a href="mailto:Nexushireltd@gmail.com"><i class="fas fa-envelope me-2"></i> Nexushireltd@gmail.com</a>
-						<a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +1 (123)-456-789</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item">
+										<a href="find-job.html" class="nav-link">Find A Job</a>
+									</li>
+									<li class="nav-item">
+										<a href="post-job.html" class="nav-link">Post A Job</a>
+									</li>
+									<li class="nav-item">
+										<a href="job-list.html" class="nav-link">Job List</a>
+									</li>
+									<li class="nav-item">
+										<a href="job-grid.html" class="nav-link">Job Grid</a>
+									</li>
+									<li class="nav-item">
+										<a href="job-details.html" class="nav-link">Job Details</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link dropdown-toggle">Candidates</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item">
+										<a href="candidate.html" class="nav-link">Candidates</a>
+									</li>
+									<li class="nav-item">
+										<a href="candidate-details.html" class="nav-link">Candidates Details</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link dropdown-toggle">Pages</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item">
+										<a href="company.html" class="nav-link">Company</a>
+									</li>
+									<li class="nav-item">
+										<a href="pricing.html" class="nav-link">Pricing</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link dropdown-toggle">Profile</a>
+										<ul class="dropdown-menu">
+											<li class="nav-item">
+												<a href="account.html" class="nav-link">Account</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link dropdown-toggle">Member</a>
+
+												<ul class="dropdown-menu">
+													<li class="nav-item">
+														<a href="sign-in.html" class="nav-link">Sign In</a>
+													</li>
+													<li class="nav-item">
+														<a href="sign-up.html" class="nav-link">Sign Up</a>
+													</li>
+													<li class="nav-item">
+														<a href="reset-password.html" class="nav-link">Reset Password</a>
+													</li>
+												</ul>
+											<li>
+											<li class="nav-item">
+												<a href="resume.html" class="nav-link">Resume</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a href="404.html" class="nav-link">404 Page</a>
+									</li>
+									<li class="nav-item">
+										<a href="testimonial.html" class="nav-link">Testimonials</a>
+									</li>
+									<li class="nav-item">
+										<a href="faq.html" class="nav-link">FAQ</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link">Catagories</a>
+									</li>
+									<li class="nav-item">
+										<a href="privacy-policy.html" class="nav-link">Privacy & Policy</a>
+									</li>
+									<li class="nav-item">
+										<a href="terms-condition.html" class="nav-link">Terms & Conditions</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link dropdown-toggle">Blog</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item">
+										<a href="blog.html" class="nav-link">Blog</a>
+									</li>
+									<li class="nav-item">
+										<a href="blog-two.html" class="nav-link">Blog Two</a>
+									</li>
+									<li class="nav-item">
+										<a href="blog-details.html" class="nav-link">Blog Details</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="contact.html" class="nav-link">Contact Us</a>
+							</li>
+						</ul>
+
+						<div class="other-option">
+							<a href="sign-up.html" class="signup-btn">Sign Up</a>
+							<a href="sign-in.html" class="signin-btn">Sign In</a>
+						</div>
 					</div>
-				</div>
+				</nav>
 			</div>
 		</div>
 	</div>
+	<!-- Navbar Area End -->
 
-	<!-- Copyright Start -->
-	<div class="container-fluid copyright py-4">
+	@yield('content')
+
+	<!-- Footer Section Start -->
+	<footer class="footer-area pt-100 pb-70">
 		<div class="container">
-			<div class="row g-4 align-items-center">
-				<div class="col-md-6 text-center text-md-start mb-md-0">
-					<span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>NexusHire
+			<div class="row justify-content-center">
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-widget">
+						<div class="footer-logo">
+							<a href="index.html">
+								<img src="{{ asset('frontend-assets/img/logo.png') }}" alt="logo">
+							</a>
+						</div>
 
-						</a>, All right reserved.</span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna. Sed eiusmod tempor incididunt ut.</p>
+
+						<div class="footer-social">
+							<a href="https://www.facebook.com/login/" target="_blank"><i class='bx bxl-facebook'></i></a>
+							<a href="https://twitter.com/i/flow/login" target="_blank"><i class='bx bxl-twitter'></i></a>
+							<a href="https://www.pinterest.com/" target="_blank"><i class='bx bxl-pinterest-alt'></i></a>
+							<a href="https://www.linkedin.com/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-6 text-center text-md-end text-body">
 
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-widget pl-60">
+						<h3>For Candidate</h3>
+						<ul>
+							<li>
+								<a href="job-grid.html">
+									<i class='bx bx-chevrons-right bx-tada'></i>
+									Browse Jobs
+								</a>
+							</li>
+							<li>
+								<a href="account.html">
+									<i class='bx bx-chevrons-right bx-tada'></i>
+									Account
+								</a>
+							</li>
+							<li>
+								<a href="catagories.html">
+									<i class='bx bx-chevrons-right bx-tada'></i>
+									Browse Categories
+								</a>
+							</li>
+							<li>
+								<a href="resume.html">
+									<i class='bx bx-chevrons-right bx-tada'></i>
+									Resume
+								</a>
+							</li>
+							<li>
+								<a href="job-list.html">
+									<i class='bx bx-chevrons-right bx-tada'></i>
+									Job List
+								</a>
+							</li>
+							<li>
+								<a href="sign-up.html">
+									<i class='bx bx-chevrons-right bx-tada'></i>
+									Sign Up
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-widget pl-60">
+						<h3>Quick Links</h3>
+						<ul>
+							<li>
+								<a href="index.html">
+									<i class='bx bx-chevrons-right bx-tada'></i>
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="about.html">
+									<i class='bx bx-chevrons-right bx-tada'></i>
+									About
+								</a>
+							</li>
+							<li>
+								<a href="faq.html">
+									<i class='bx bx-chevrons-right bx-tada'></i>
+									FAQ
+								</a>
+							</li>
+							<li>
+								<a href="pricing.html">
+									<i class='bx bx-chevrons-right bx-tada'></i>
+									Pricing
+								</a>
+							</li>
+							<li>
+								<a href="privacy.html">
+									<i class='bx bx-chevrons-right bx-tada'></i>
+									Privacy
+								</a>
+							</li>
+							<li>
+								<a href="contact.html">
+									<i class='bx bx-chevrons-right bx-tada'></i>
+									Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-widget footer-info">
+						<h3>Information</h3>
+						<ul>
+							<li>
+								<span>
+									<i class='bx bxs-phone'></i>
+									Phone:
+								</span>
+								<a href="tel:882569756">
+									+101 984 754
+								</a>
+							</li>
+
+							<li>
+								<span>
+									<i class='bx bxs-envelope'></i>
+									Email:
+								</span>
+								<a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#9ef7f0f8f1def4f1e8f7fbb0fdf1f3">
+									<span class="__cf_email__" data-cfemail="1a73747c755a70756c737f34797577">[email&#160;protected]</span>
+								</a>
+							</li>
+
+							<li>
+								<span>
+									<i class='bx bx-location-plus'></i>
+									Address:
+								</span>
+								123, Denver, USA
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
+	</footer>
+	<div class="copyright-text text-center">
+		<p>© Jovie is Proudly Owned by <a href="https://hibootstrap.com/" target="_blank">HiBootstrp</a></p>
 	</div>
-	<!-- Copyright End --> <!-- Footer End -->
+	<!-- Footer Section End -->
 
-	<!-- Back to Top -->
-	<a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+	<!-- Back To Top Start -->
+	<div class="top-btn">
+		<i class='bx bx-chevrons-up bx-fade-up'></i>
+	</div>
+	<!-- Back To Top End -->
 
-	<!-- JavaScript Libraries -->
+	<!-- jQuery first, then Bootstrap JS -->
+	<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 	<script src="{{ asset('frontend-assets/js/jquery.min.js') }}"></script>
-	<script src="{{ asset('frontend-assets//js/bootstrap.bundle.min.js') }}"></script>
-	<script src="{{ asset('frontend-assets/lib/wow/wow.min.js') }}"></script>
-	<script src="{{ asset('frontend-assets/lib/easing/easing.min.js') }}"></script>
-	<script src="{{ asset('frontend-assets/lib/waypoints/waypoints.min.js') }}"></script>
-	<script src="{{ asset('frontend-assets/lib/counterup/counterup.min.js') }}"></script>
-	<script src="{{ asset('frontend-assets/lib/owlcarousel/owl.carousel.min.js') }}"></script>
-
-	<script src="{{ asset('frontend-assets/js/main.js') }}"></script>
-    
-    @yield('javascript')
+	<script src="{{ asset('frontend-assets/js/bootstrap.bundle.min.js') }}"></script>
+	<!-- Owl Carousel JS -->
+	<script src="{{ asset('frontend-assets/js/owl.carousel.min.js') }}"></script>
+	<!-- Nice Select JS -->
+	<script src="{{ asset('frontend-assets/js/jquery.nice-select.min.js') }}"></script>
+	<!-- Magnific Popup JS -->
+	<script src="{{ asset('frontend-assets/js/jquery.magnific-popup.min.js') }}"></script>
+	<!-- Subscriber Form JS -->
+	<script src="{{ asset('frontend-assets/js/jquery.ajaxchimp.min.js') }}"></script>
+	<!-- Form Velidation JS -->
+	<script src="{{ asset('frontend-assets/js/form-validator.min.js') }}"></script>
+	<!-- Contact Form -->
+	<script src="{{ asset('frontend-assets/js/contact-form-script.js') }}"></script>
+	<!-- Meanmenu JS -->
+	<script src="{{ asset('frontend-assets/js/meanmenu.js') }}"></script>
+	<!-- Custom JS -->
+	<script src="{{ asset('frontend-assets/js/custom.js') }}"></script>
 </body>
 
 </html>

@@ -1,211 +1,1164 @@
 @extends('layouts.frontend.app')
 
 @section('content')
-<!-- About Start -->
-<div class="container-fluid about overflow-hidden mb-5 py-5">
-	<div class="container py-5">
-		<div class="row g-5">
-			<div class="col-xl-6 wow" data-wow-delay="0.2s">
-				<div class="about-img rounded h-100">
-					<img src="{{ asset('frontend-assets/uploads/about/work-force.jpg') }}" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="NexusHire Team">
-					<div class="about-exp"><span>16+ Years of Excellence</span></div>
-				</div>
-			</div>
-			<div class="col-xl-6 wow" data-wow-delay="0.2s">
-				<div class="about-item">
-					<h4 class="text-primary text-uppercase">About Us</h4>
-					<h1 class="display-5 mb-3">Simplifying Workforce Management</h1>
-					<p class="mb-4 text-truncate-ellipsis">
-						NexusHire Workforce Solutions Inc. is a Canada-based staffing company located in Alberta specializing in solutions for the administrative, call centre, manufacturing, warehouse, and logistics fields.With AI technology, we can more quickly attract, capture, screen, and match the best candidates for your company’s available positions. The faster we are able to engage active people, instead of spending critical time on chasing down passive candidates, the faster we can match the most motivated and qualified candidate to your available position! Once a candidate accepts a position at one of our customers, we’re able to keep them warm and engaged while they are waiting for the start date to arrive, and to be more responsive to their progress while they are out on.
-					</p>
+<!-- Banner Section Start -->
+<div class="banner-section">
+	<div class="d-table">
+		<div class="d-table-cell">
+			<div class="container">
+				<div class="banner-content text-center">
+					<p>Find Jobs, Employment & Career Opportunities</p>
+					<h1>Drop Resume & Get Your Desire Job!</h1>
 
-
-					<div class="bg-light rounded p-4 mb-4">
-						<div class="row">
-							<div class="col-12">
-								<div class="d-flex">
-									<div class="pe-4">
-										<div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
-											<i class="fas fa-robot text-white fa-2x"></i>
-										</div>
-									</div>
-									<div>
-										<a href="#" class="h4 d-inline-block mb-3">AI-Driven Recruitment Success</a>
-										<p class="mb-0">
-											NexusHire has made a significant investment in Artificial Intelligence (AI) recruiting technology helping increase our engagement with our candidates and out-to-work assignment employees.
-										</p>
-									</div>
+					<form class="banner-form">
+						<div class="row justify-content-center">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="exampleInputEmail1">Keyword:</label>
+									<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Job Title">
 								</div>
 							</div>
+
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="exampleInputEmail2">Location:</label>
+									<input type="text" class="form-control" id="exampleInputEmail2" placeholder="City or State">
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<button type="submit" class="find-btn">
+									Find A Job
+									<i class='bx bx-search'></i>
+								</button>
+							</div>
 						</div>
-					</div>
-					<a href="about.html" class="btn btn-secondary rounded-pill py-3 px-5">Read More</a>
+					</form>
+
+					<ul class="keyword">
+						<li>Trending Keywords:</li>
+						<li><a href="#">Automotive,</a></li>
+						<li><a href="#">Education,</a></li>
+						<li><a href="#">Health</a></li>
+						<li>and</li>
+						<li><a href="#">Care Engineering</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- About End -->
+<!-- Banner Section End -->
 
+<!-- Category Section Start -->
+<section class="categories-section pt-100 pb-70">
+	<div class="container">
+		<div class="section-title text-center">
+			<h2>Choose Your Category</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices.</p>
+		</div>
 
-<!-- Best Match Start -->
-<div class="container-fluid bestmatch overflow-hidden mt-5 py-5">
-	<div class="container py-5">
-		<div class="row g-5">
+		<div class="row justify-content-center">
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<a href="job-list.html">
+					<div class="category-card">
+						<i class='flaticon-accounting'></i>
+						<h3>Accountancy</h3>
+						<p>301 open position</p>
+					</div>
+				</a>
+			</div>
 
-			<div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-				<div class="about-item">
-					<!-- <h4 class="text-primary text-uppercase">About Us</h4> -->
-					<h1 class="display-5 mb-3">Making the Industry’s Best Matches</h1>
-					<p class="mb-4">
-						NexusHire is widely recognized as one of the industry’s fastest growing staffing agencies. Thanks to our longstanding experience in various industries, we have the capacity to build meaningful, long-lasting relationships with all our clients. Our success is a result of our commitment to the best people, the best solutions and the best results. We have dedicated our focus and passion to finding highly skilled and motivated talents for a variety of hiring companies. Our goal is to know your hiring needs as well as you do.
-					</p>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<a href="job-list.html">
+					<div class="category-card">
+						<i class='flaticon-graduation-cap'></i>
+						<h3>Education</h3>
+						<p>210 open position</p>
+					</div>
+				</a>
+			</div>
 
-					<div class="bg-light rounded p-4 mb-4">
-						<div class="row">
-							<div class="col-12">
-								<div class="d-flex">
-									<div class="pe-4">
-										<div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
-											<!-- <i class="fas fa-check-circle text-white fa-2x"></i> -->
-											<i class="fas fa-phone-alt text-white fa-2x"></i>
-										</div>
-									</div>
-									<div>
-										<a href="#" class="h4 d-inline-block mb-2">Get in touch</a>
-										<p class="mb-0">
-											We invite you to contact one of our team members. They are committed to providing you, our clients, with an experience focused on what you value most. Get in touch with us today and move one step closer to achieving your employment goals.
-										</p>
-									</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<a href="job-list.html">
+					<div class="category-card">
+						<i class='flaticon-wrench-and-screwdriver-in-cross'></i>
+						<h3>Automotive Jobs</h3>
+						<p>281 open position</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<a href="job-list.html">
+					<div class="category-card">
+						<i class='flaticon-consultation'></i>
+						<h3>Business</h3>
+						<p>122 open position</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<a href="job-list.html">
+					<div class="category-card">
+						<i class='flaticon-heart'></i>
+						<h3>Health Care</h3>
+						<p>335 open position</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-lg-3  col-md-4 col-sm-6">
+				<a href="job-list.html">
+					<div class="category-card">
+						<i class='flaticon-computer'></i>
+						<h3>IT & Agency</h3>
+						<p>401 open position</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-lg-3  col-md-4 col-sm-6  ">
+				<a href="job-list.html">
+					<div class="category-card">
+						<i class='flaticon-worker'></i>
+						<h3>Engineering</h3>
+						<p>100 open position</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<a href="job-list.html">
+					<div class="category-card">
+						<i class='flaticon-auction'></i>
+						<h3>Legal</h3>
+						<p>201 open position</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Category Section End -->
+
+<!-- Jobs Section Start -->
+<section class="job-section pb-70">
+	<div class="container">
+		<div class="section-title text-center">
+			<h2>Jobs You May Be Interested In</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices.</p>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-sm-6">
+				<div class="job-card">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-lg-3">
+							<div class="thumb-img">
+								<a href="job-details.html">
+									<img src="assets/img/company-logo/1.png" alt="company logo">
+								</a>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="job-info">
+								<h3>
+									<a href="job-details.html">Post-Room Operate</a>
+								</h3>
+								<ul>
+									<li>Via <a href="job-details.html">Tourt Design LTD</a></li>
+									<li>
+										<i class='bx bx-location-plus'></i>
+										Wellesley Rd, London
+									</li>
+									<li>
+										<i class='bx bx-filter-alt'></i>
+										Accountancy
+									</li>
+									<li>
+										<i class='bx bx-briefcase'></i>
+										Freelance
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-lg-3">
+							<div class="job-save">
+								<span>Full Time</span>
+								<a href="job-details.html">
+									<i class='bx bx-heart'></i>
+								</a>
+								<p>
+									<i class='bx bx-stopwatch'></i>
+									1 Hr Ago
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="job-card">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-lg-3">
+							<div class="thumb-img">
+								<a href="job-details.html">
+									<img src="assets/img/company-logo/2.png" alt="company logo">
+								</a>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="job-info">
+								<h3>
+									<a href="job-details.html">Data Entry</a>
+								</h3>
+								<ul>
+									<li>Via <a href="job-details.html">Techno Inc.</a></li>
+									<li>
+										<i class='bx bx-location-plus'></i>
+										Street 40/A, London
+									</li>
+									<li>
+										<i class='bx bx-filter-alt'></i>
+										Data Entry
+									</li>
+									<li>
+										<i class='bx bx-briefcase'></i>
+										Freelance
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-lg-3">
+							<div class="job-save">
+								<a href="job-details.html">
+									<i class='bx bx-heart'></i>
+								</a>
+								<p>
+									<i class='bx bx-stopwatch'></i>
+									3 Hr Ago
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="job-card">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-lg-3">
+							<div class="thumb-img">
+								<a href="job-details.html">
+									<img src="assets/img/company-logo/3.png" alt="company logo">
+								</a>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="job-info">
+								<h3>
+									<a href="job-details.html">Graphic Designer</a>
+								</h3>
+								<ul>
+									<li>Via <a href="job-details.html">Devon Design</a></li>
+									<li>
+										<i class='bx bx-location-plus'></i>
+										West Sight, USA
+									</li>
+									<li>
+										<i class='bx bx-filter-alt'></i>
+										Graphics
+									</li>
+									<li>
+										<i class='bx bx-briefcase'></i>
+										Freelance
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-lg-3">
+							<div class="job-save">
+								<a href="job-details.html">
+									<i class='bx bx-heart'></i>
+								</a>
+								<p>
+									<i class='bx bx-stopwatch'></i>
+									4 Hr Ago
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="job-card">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-lg-3">
+							<div class="thumb-img">
+								<a href="job-details.html">
+									<img src="assets/img/company-logo/4.png" alt="company logo">
+								</a>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="job-info">
+								<h3>
+									<a href="job-details.html">Web Developer</a>
+								</h3>
+								<ul>
+									<li>Via <a href="job-details.html">MegaNews</a></li>
+									<li>
+										<i class='bx bx-location-plus'></i>
+										San Francisco, California
+									</li>
+									<li>
+										<i class='bx bx-filter-alt'></i>
+										Development
+									</li>
+									<li>
+										<i class='bx bx-briefcase'></i>
+										Freelance
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-lg-3">
+							<div class="job-save">
+								<a href="job-details.html">
+									<i class='bx bx-heart'></i>
+								</a>
+								<p>
+									<i class='bx bx-stopwatch'></i>
+									5 Hr Ago
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="job-card">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-lg-3">
+							<div class="thumb-img">
+								<a href="job-details.html">
+									<img src="assets/img/company-logo/5.png" alt="company logo">
+								</a>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="job-info">
+								<h3>
+									<a href="job-details.html">Digital Marketor</a>
+								</h3>
+								<ul>
+									<li>Via <a href="job-details.html">AB Marketer LTD</a></li>
+									<li>
+										<i class='bx bx-location-plus'></i>
+										Wellesley Rd, London
+									</li>
+									<li>
+										<i class='bx bx-filter-alt'></i>
+										Marketing
+									</li>
+									<li>
+										<i class='bx bx-briefcase'></i>
+										Freelance
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-lg-3">
+							<div class="job-save">
+								<a href="job-details.html">
+									<i class='bx bx-heart'></i>
+								</a>
+								<p>
+									<i class='bx bx-stopwatch'></i>
+									6 Hr Ago
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="job-card">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-lg-3">
+							<div class="thumb-img">
+								<a href="job-details.html">
+									<img src="assets/img/company-logo/6.png" alt="company logo">
+								</a>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="job-info">
+								<h3>
+									<a href="job-details.html">UI/UX Designer</a>
+								</h3>
+								<ul>
+									<li>Via <a href="job-details.html">Design Hunter</a></li>
+									<li>
+										<i class='bx bx-location-plus'></i>
+										Zoo Rd, London
+									</li>
+									<li>
+										<i class='bx bx-filter-alt'></i>
+										Accountancy
+									</li>
+									<li>
+										<i class='bx bx-briefcase'></i>
+										Freelance
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-lg-3">
+							<div class="job-save">
+								<a href="job-details.html">
+									<i class='bx bx-heart'></i>
+								</a>
+								<p>
+									<i class='bx bx-stopwatch'></i>
+									8 Hr Ago
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Jobs Section End -->
+
+<!-- Way To Use Section Start -->
+<section class="use-section pt-100 pb-70">
+	<div class="container">
+		<div class="section-title text-center">
+			<h2>Easiest Way To Use</h2>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-md-4 col-sm-6">
+				<div class="use-text">
+					<span>1</span>
+					<i class='flaticon-website'></i>
+					<h3>Browse Job</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6">
+				<div class="use-text">
+					<span>2</span>
+					<i class='flaticon-recruitment'></i>
+					<h3>Find Your Vaccancy</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6  ">
+				<div class="use-text">
+					<span>3</span>
+					<i class='flaticon-login'></i>
+					<h3>Submit Resume</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Way To Use Section End -->
+
+<!-- Companies Section Start -->
+<section class="company-section pt-100 pb-70">
+	<div class="container">
+		<div class="section-title text-center">
+			<h2>Top Companies</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices.</p>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-lg-3 col-sm-6">
+				<div class="company-card">
+					<div class="company-logo">
+						<a href="job-grid.html">
+							<img src="assets/img/top-company/1.png" alt="company logo">
+						</a>
+					</div>
+					<div class="company-text">
+						<h3>Trophy & Sans</h3>
+						<p>
+							<i class='bx bx-location-plus'></i>
+							Green Lanes, London
+						</p>
+						<a href="job-grid.html" class="company-btn">
+							25 Open Position
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-sm-6">
+				<div class="company-card">
+					<div class="company-logo">
+						<a href="job-grid.html">
+							<img src="assets/img/top-company/2.png" alt="company logo">
+						</a>
+					</div>
+					<div class="company-text">
+						<h3>Trout Design</h3>
+						<p>
+							<i class='bx bx-location-plus'></i>
+							Park Avenue, Mumbai
+						</p>
+						<a href="job-grid.html" class="company-btn">
+							35 Open Position
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-sm-6">
+				<div class="company-card">
+					<div class="company-logo">
+						<a href="job-grid.html">
+							<img src="assets/img/top-company/3.png" alt="company logo">
+						</a>
+					</div>
+					<div class="company-text">
+						<h3>Resland LTD</h3>
+						<p>
+							<i class='bx bx-location-plus'></i>
+							Betas Quence, London
+						</p>
+						<a href="job-grid.html" class="company-btn">
+							20 Open Position
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-sm-6">
+				<div class="company-card">
+					<div class="company-logo">
+						<a href="job-grid.html">
+							<img src="assets/img/top-company/4.png" alt="company logo">
+						</a>
+					</div>
+					<div class="company-text">
+						<h3>Lawn Hopper</h3>
+						<p>
+							<i class='bx bx-location-plus'></i>
+							Wellesley Rd, London
+						</p>
+						<a href="job-grid.html" class="company-btn">
+							45 Open Position
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Companies Section End -->
+
+<!-- Why Choose Section Start -->
+<section class="why-choose">
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-lg-7 p-0">
+				<div class="why-choose-text pt-100 pb-70">
+					<div class="section-title text-center">
+						<h2>Why You Choose Jovie?</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolorei.</p>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-sm-6">
+							<div class="media">
+								<i class="flaticon-group align-self-center mr-3"></i>
+								<div class="media-body">
+									<h5 class="mt-0">Best Talented People</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="media">
+								<i class="flaticon-research align-self-center mr-3"></i>
+								<div class="media-body">
+									<h5 class="mt-0">Easy To Find Canditate</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="media">
+								<i class="flaticon-discussion align-self-center mr-3"></i>
+								<div class="media-body">
+									<h5 class="mt-0">Easy To Communicate</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="media">
+								<i class="flaticon-recruitment align-self-center mr-3"></i>
+								<div class="media-body">
+									<h5 class="mt-0">Global Recruitment Option</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<a href="{{ route('frontend.contact') }}" class="btn btn-secondary rounded-pill py-3 px-5">Contact us</a>
+
+					<div class="row counter-area">
+						<div class="col-md-3 col-6">
+							<div class="counter-text">
+								<h2><span>127</span></h2>
+								<p>Job Posted</p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-6">
+							<div class="counter-text">
+								<h2><span>137</span></h2>
+								<p>Job Filed</p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-6">
+							<div class="counter-text">
+								<h2><span>180</span></h2>
+								<p>Company</p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-6">
+							<div class="counter-text">
+								<h2><span>144</span></h2>
+								<p>Members</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
-				<div class="bestmatch-img rounded h-100">
-					<img src="{{ asset('frontend-assets/uploads/about/business-meeting.jpg') }}" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="NexusHire Team">
-					<div class="bestmatch-exp"><span>Building Strong Partnerships</span></div>
+
+			<div class="col-lg-5 p-0">
+				<div class="why-choose-img">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Why Choose Section End -->
+
+<!-- Job Info Section Start -->
+<div class="job-info pt-100 pb-70">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<div class="looking-job">
+					<div class="media">
+						<i class='flaticon-group align-self-start mr-3'></i>
+						<div class="media-body">
+							<h5 class="mt-0">Looking For a Job</h5>
+							<p>Your next role could be with one of these top leading organizations</p>
+
+							<a href="job-list.html">
+								Apply Now
+								<i class='bx bx-chevrons-right'></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="recruiting-card">
+					<div class="media">
+						<i class='flaticon-resume align-self-start mr-3'></i>
+						<div class="media-body">
+							<h5 class="mt-0">Are You Recruiting?</h5>
+							<p>Your next role could be with one of these top leading organizations</p>
+
+							<a href="post-job.html">
+								Apply Now
+								<i class='bx bx-chevrons-right'></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- Best Match End -->
+<!-- Job Info Section End -->
 
-<!-- Service Start -->
-<div class="container-fluid service bg-light overflow-hidden py-5">
-	<div class="container py-5">
-		<div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-			<h4 class="text-uppercase text-primary">Our Services</h4>
+<!-- Pricing Section Start -->
+<section class="pricing-section pb-70">
+	<div class="container">
+		<div class="section-title text-center">
+			<h2>Buy Our Plans & Packages</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
 		</div>
-		<div class="row gx-0 gy-4 align-items-center">
-			<div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
-				<div class="text-end mb-3">
-					<h3>JobSeekers</h3>
+
+		<div class="row justify-content-center">
+			<div class="col-lg-4 col-sm-6">
+				<div class="price-card">
+					<div class="price-top">
+						<h3>Free Forever</h3>
+						<i class='bx bx-user'></i>
+						<h2>0<sub>/Month</sub></h2>
+					</div>
+
+					<div class="price-feature">
+						<ul>
+							<li>
+								<i class='bx bx-check'></i>
+								Appear in results
+							</li>
+							<li>
+								<i class='bx bx-check'></i>
+								<strong>Accept mobile app</strong>
+							</li>
+							<li>
+								<i class='bx bx-check'></i>
+								Manage canditates directly
+							</li>
+						</ul>
+					</div>
+
+					<div class="price-btn">
+						<a href="post-job.html">Find A Job</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-6">
+				<div class="price-card mt-12">
+					<div class="price-top">
+						<h3>Sponsor</h3>
+						<i class='bx bx-user'></i>
+						<h2>10<sub>/Month</sub></h2>
+					</div>
+
+					<div class="price-feature">
+						<ul>
+							<li>
+								<i class='bx bx-check'></i>
+								Premium placement
+							</li>
+							<li>
+								<i class='bx bx-check'></i>
+								<strong>PPC on your job</strong>
+							</li>
+							<li>
+								<i class='bx bx-check'></i>
+								Reach more candidates
+							</li>
+							<li>
+								<i class='bx bx-check'></i>
+								Desktop, mobile job alerts
+							</li>
+						</ul>
+					</div>
+
+					<div class="price-btn">
+						<a href="post-job.html">Find A Job</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-6  ">
+				<div class="price-card">
+					<div class="price-top">
+						<h3>Premium Plan</h3>
+						<i class='bx bx-user'></i>
+						<h2>30<sub>/Month</sub></h2>
+					</div>
+
+					<div class="price-feature">
+						<ul>
+							<li>
+								<i class='bx bx-check'></i>
+								Job ad live for six-weeks
+							</li>
+							<li>
+								<i class='bx bx-check'></i>
+								<strong>Premium placement</strong>
+							</li>
+							<li>
+								<i class='bx bx-check'></i>
+								Desktop, mobile job alerts
+							</li>
+						</ul>
+					</div>
+
+					<div class="price-btn">
+						<a href="post-job.html">Find A Job</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Pricing Section End -->
+
+<!-- Candidate Section Start -->
+<section class="candidate-section pb-100">
+	<div class="container">
+		<div class="section-title text-center">
+			<h2>Featured Candidates</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus</p>
+		</div>
+
+		<div class="condidate-slider owl-carousel owl-theme">
+			<div class="condidate-item">
+				<div class="candidate-img">
+					<img src="assets/img/candidate/1.jpg" alt="candidate image">
+				</div>
+				<div class="candidate-social">
+					<a href="https://www.facebook.com/login/" target="_blank"><i class='bx bxl-facebook'></i></a>
+					<a href="https://twitter.com/i/flow/login" target="_blank"><i class='bx bxl-twitter'></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+				</div>
+				<div class="candidate-text">
+					<h3><a href="candidate-details.html">Mibraj Alex</a></h3>
+					<ul>
+						<li>
+							<i class='bx bx-filter-alt'></i>
+							Construction & Property
+						</li>
+						<li>
+							<i class='bx bx-location-plus'></i>
+							Botchergate, Carlisle
+						</li>
+					</ul>
+
+					<div class="bottom-text">
+						<p>
+							<i class='bx bx-stopwatch'></i>
+							9D ago
+						</p>
+						<a href="candidate-details.html">
+							<i class='bx bx-heart'></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="condidate-item">
+				<div class="candidate-img">
+					<img src="assets/img/candidate/2.jpg" alt="candidate image">
+				</div>
+				<div class="candidate-social">
+					<a href="https://www.facebook.com/login/" target="_blank"><i class='bx bxl-facebook'></i></a>
+					<a href="https://twitter.com/i/flow/login" target="_blank"><i class='bx bxl-twitter'></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+				</div>
+				<div class="candidate-text">
+					<h3><a href="candidate-details.html">Felica Kareon</a></h3>
+					<ul>
+						<li>
+							<i class='bx bx-filter-alt'></i>
+							SEO Expart
+						</li>
+						<li>
+							<i class='bx bx-location-plus'></i>
+							Georgetown, USA
+						</li>
+					</ul>
+
+					<div class="bottom-text">
+						<p>
+							<i class='bx bx-stopwatch'></i>
+							8D ago
+						</p>
+						<a href="candidate-details.html">
+							<i class='bx bx-heart'></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="condidate-item">
+				<div class="candidate-img">
+					<img src="assets/img/candidate/3.jpg" alt="candidate image">
+				</div>
+				<div class="candidate-social">
+					<a href="https://www.facebook.com/login/" target="_blank"><i class='bx bxl-facebook'></i></a>
+					<a href="https://twitter.com/i/flow/login" target="_blank"><i class='bx bxl-twitter'></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+				</div>
+				<div class="candidate-text">
+					<h3><a href="candidate-details.html">Malisha Patel</a></h3>
+					<ul>
+						<li>
+							<i class='bx bx-filter-alt'></i>
+							Project Management
+						</li>
+						<li>
+							<i class='bx bx-location-plus'></i>
+							Madison, USA
+						</li>
+					</ul>
+
+					<div class="bottom-text">
+						<p>
+							<i class='bx bx-stopwatch'></i>
+							1D ago
+						</p>
+						<a href="candidate-details.html">
+							<i class='bx bx-heart'></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="condidate-item">
+				<div class="candidate-img">
+					<img src="assets/img/candidate/1.jpg" alt="candidate image">
+				</div>
+				<div class="candidate-social">
+					<a href="https://www.facebook.com/login/" target="_blank"><i class='bx bxl-facebook'></i></a>
+					<a href="https://twitter.com/i/flow/login" target="_blank"><i class='bx bxl-twitter'></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+				</div>
+				<div class="candidate-text">
+					<h3><a href="candidate-details.html">Mibraj Alex</a></h3>
+					<ul>
+						<li>
+							<i class='bx bx-filter-alt'></i>
+							Construction & Property
+						</li>
+						<li>
+							<i class='bx bx-location-plus'></i>
+							Botchergate, Carlisle
+						</li>
+					</ul>
+
+					<div class="bottom-text">
+						<p>
+							<i class='bx bx-stopwatch'></i>
+							9D ago
+						</p>
+						<a href="candidate-details.html">
+							<i class='bx bx-heart'></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="condidate-item">
+				<div class="candidate-img">
+					<img src="assets/img/candidate/4.jpg" alt="candidate image">
+				</div>
+				<div class="candidate-social">
+					<a href="https://www.facebook.com/login/" target="_blank"><i class='bx bxl-facebook'></i></a>
+					<a href="https://twitter.com/i/flow/login" target="_blank"><i class='bx bxl-twitter'></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+				</div>
+				<div class="candidate-text">
+					<h3><a href="candidate-details.html">Quence Joes</a></h3>
+					<ul>
+						<li>
+							<i class='bx bx-filter-alt'></i>
+							Web Developer
+						</li>
+						<li>
+							<i class='bx bx-location-plus'></i>
+							Augusta, Maine
+						</li>
+					</ul>
+
+					<div class="bottom-text">
+						<p>
+							<i class='bx bx-stopwatch'></i>
+							8D ago
+						</p>
+						<a href="candidate-details.html">
+							<i class='bx bx-heart'></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="condidate-item">
+				<div class="candidate-img">
+					<img src="assets/img/candidate/2.jpg" alt="candidate image">
+				</div>
+				<div class="candidate-social">
+					<a href="https://www.facebook.com/login/" target="_blank"><i class='bx bxl-facebook'></i></a>
+					<a href="https://twitter.com/i/flow/login" target="_blank"><i class='bx bxl-twitter'></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+				</div>
+				<div class="candidate-text">
+					<h3><a href="candidate-details.html">Felica Kareon</a></h3>
+					<ul>
+						<li>
+							<i class='bx bx-filter-alt'></i>
+							SEO Expart
+						</li>
+						<li>
+							<i class='bx bx-location-plus'></i>
+							Georgetown, USA
+						</li>
+					</ul>
+
+					<div class="bottom-text">
+						<p>
+							<i class='bx bx-stopwatch'></i>
+							8D ago
+						</p>
+						<a href="candidate-details.html">
+							<i class='bx bx-heart'></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="condidate-item">
+				<div class="candidate-img">
+					<img src="assets/img/candidate/3.jpg" alt="candidate image">
+				</div>
+				<div class="candidate-social">
+					<a href="https://www.facebook.com/login/" target="_blank"><i class='bx bxl-facebook'></i></a>
+					<a href="https://twitter.com/i/flow/login" target="_blank"><i class='bx bxl-twitter'></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+				</div>
+				<div class="candidate-text">
+					<h3><a href="candidate-details.html">Malisa Petel</a></h3>
+					<ul>
+						<li>
+							<i class='bx bx-filter-alt'></i>
+							Project Management
+						</li>
+						<li>
+							<i class='bx bx-location-plus'></i>
+							Madison, USA
+						</li>
+					</ul>
+
+					<div class="bottom-text">
+						<p>
+							<i class='bx bx-stopwatch'></i>
+							1D ago
+						</p>
+						<a href="candidate-details.html">
+							<i class='bx bx-heart'></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="condidate-item">
+				<div class="candidate-img">
+					<img src="assets/img/candidate/4.jpg" alt="candidate image">
+				</div>
+				<div class="candidate-social">
+					<a href="https://www.facebook.com/login/" target="_blank"><i class='bx bxl-facebook'></i></a>
+					<a href="https://twitter.com/i/flow/login" target="_blank"><i class='bx bxl-twitter'></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+				</div>
+				<div class="candidate-text">
+					<h3><a href="candidate-details.html">Quence Joes</a></h3>
+					<ul>
+						<li>
+							<i class='bx bx-filter-alt'></i>
+							Web Developer
+						</li>
+						<li>
+							<i class='bx bx-location-plus'></i>
+							Augusta, Maine
+						</li>
+					</ul>
+
+					<div class="bottom-text">
+						<p>
+							<i class='bx bx-stopwatch'></i>
+							8D ago
+						</p>
+						<a href="candidate-details.html">
+							<i class='bx bx-heart'></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Candidate Section End -->
+
+<!-- Testimonial Section Start -->
+<section class="testimonial-section ptb-100">
+	<div class="container">
+		<div class="section-title text-center">
+			<h2>What Client’s Say About Us</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus</p>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="testimonial-slider owl-carousel owl-theme">
+				<div class="testimonial-items">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-lg-5 col-md-6   p-0">
+							<div class="testimonial-img">
+								<img src="assets/img/testimonial-img.jpg" alt="testimonial image">
+							</div>
+							<div class="testimonial-img-text">
+								<h3>Alisa Meair</h3>
+								<p>CEO of Company</p>
+							</div>
+						</div>
+						<div class="col-lg-7 p-0">
+							<div class="testimonial-text">
+								<i class='flaticon-left-quotes-sign'></i>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+							</div>
+						</div>
+					</div>
 				</div>
 
-				<!-- Job Seekers Cards -->
-				<div class="service-item rounded p-4 mb-3 d-flex flex-column h-100">
-					<div class="row">
-						<div class="col-12">
-							<div class="d-flex">
-								<div class="service-content text-end">
-									<a href="jobseeker/work-with-us.html" class="h4 d-inline-block mb-2">The Right Opportunity</a>
-									<p class="mb-0 service-text-truncate-ellipsis">
-										Finding the right job is more than simply looking for a position that reflects your skillset. How the company works and thinks, the people you work with, the opportunities available for your career in the future, all these things matter. That is why here at NexusHire we take the time to understand what you are looking for.
-										That means the way you like to work, the kind of environment that you feel comfortable in, what your future goals are. We get to know you so that you can have the job that really fits your needs, not just today, but into the future. Our focus is always on helping you build the career you want and deserve. Helping you create a path to your goals and giving you the tools to succeed.
-									</p>
-								</div>
+				<div class="testimonial-items">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-lg-5 col-md-6   p-0">
+							<div class="testimonial-img">
+								<img src="assets/img/testimonial-img-2.jpg" alt="testimonial image">
+							</div>
+							<div class="testimonial-img-text">
+								<h3>John Doe</h3>
+								<p>Web Designer</p>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="service-item rounded p-4 mb-3 d-flex flex-column h-100">
-					<div class="row">
-						<div class="col-12">
-							<div class="d-flex">
-								<div class="service-content text-end">
-									<a href="jobseeker/work-with-us.html" class="h4 d-inline-block mb-2">Hiring Process</a>
-									<p class="mb-0 service-text-truncate-ellipsis">
-										Finding a new job, or even your first, can be a stressful experience, which is why we aim to make everything as easy as possible for you. Our hiring process gets you into that dream job as quickly as possible, and that begins with our job board.
-										Take a look at our current job vacancies to see if there is anything to suit. You can filter by job type, so it’s fast and easy to find the kind of jobs that you are looking for. If you do find one, you can apply directly through the system. Don’t forget, as a major recruitment specialist, our job board is constantly updated, so sign up for alerts to get first notice of new jobs that fit your needs.
-										In addition, you can apply to us directly, just send your resume, and we will look out for suitable positions for you, get in touch and schedule a phone or in-person interview as required.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="service-item rounded p-4 mb-3 d-flex flex-column h-100">
-					<div class="row">
-						<div class="col-12">
-							<div class="d-flex">
-								<div class="service-content text-end">
-									<a href="jobseeker/work-with-us.html" class="h4 d-inline-block mb-2">Job Support</a>
-									<p class="mb-0 service-text-truncate-ellipsis">
-										From CV optimization to interview techniques, our expert team are here to help you every step of the way. Whether you are looking for your first job or securing that last move on your career ladder, we are here to help. Our highly- experienced recruitment specialists will ensure that you don’t have to face the job market alone. Check out our Candidate Resource Centre or get in touch today and see how we can help you find that dream job.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Center Image -->
-			<div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-				<div class="bg-transparent text-center">
-					<img src="{{ asset('frontend-assets/images/staff.html') }}" class="img-fluid w-100" alt="Staff Image">
-				</div>
-			</div>
-			<div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
-				<div class="mb-3">
-					<h3>Employers</h3>
-				</div>
-				<!-- Employers Cards -->
-				<div class="service-item rounded p-4 mb-3 d-flex flex-column h-100">
-					<div class="row">
-						<div class="col-12">
-							<div class="d-flex">
-								<div class="service-content">
-									<a href="employer/service.html" class="h4 d-inline-block mb-2">Flex Staff</a>
-									<p class="mb-0 service-text-truncate-ellipsis">
-										NexusHire offers flexible staffing solutions that can provide our clients with short and long-term contingent workers to meet their seasonal, project or growth requirements.  We maintain an active database of qualified registered contingent workers who have been tested and met stringent quality control standards in regards to safety, functional literacy, math, and operationally specific skills.  We are continually recruiting for new workers through our online and offline channels and can deploy new workers in as little as 3 hours’ notice.  We work with some of the largest companies in Canada to meet their on-demand workforce requirements
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="service-item rounded p-4 mb-3 d-flex flex-column h-100">
-					<div class="row">
-						<div class="col-12">
-							<div class="d-flex">
-								<div class="service-content">
-									<a href="employer/service.html" class="h4 d-inline-block mb-2">Temp to Perm</a>
-									<p class="mb-0 service-text-truncate-ellipsis">
-										In some cases our clients are looking to hire a candidate on a temporary basis at first and then over a period of time transition that candidate to a permanent role.  As such, we offer a temp to perm service to support these requirements.  Our temp to perm services operate similar to our permanent placement service in that we engage in a targeted search for a candidate that meets specific requirements.  Once found, that candidate is placed with the client in the role specified, but remains a temporary employee for a period up to 90 days. This gives the client an opportunity to assess their performance in-situ at your premises and take them on full-time once they have proven their ability to perform at the level required. Hiring without risk.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="service-item rounded p-4 mb-3 d-flex flex-column h-100">
-					<div class="row">
-						<div class="col-12">
-							<div class="d-flex">
-								<div class="service-content">
-									<a href="employer/service.html" class="h4 d-inline-block mb-2">Direct Hiring</a>
-									<p class="mb-0 service-text-truncate-ellipsis">
-										When you need the right people for your team, our direct recruitment solution delivers results. Our
-										professional recruitment consultants will identify and screen candidates for you, providing a shortlist
-										to of preselected, high-quality candidates to choose from. This saves you time, streamlining the
-										recruitment process and delivering the recruitment outcomes your business needs.
-									</p>
-								</div>
+						<div class="col-lg-7 p-0">
+							<div class="testimonial-text">
+								<i class='flaticon-left-quotes-sign'></i>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
 							</div>
 						</div>
 					</div>
@@ -213,473 +1166,121 @@
 			</div>
 		</div>
 	</div>
-</div>
-<!-- Service End-->
+</section>
+<!-- Testimonial Section End -->
 
-<!-- Hiring system Start -->
-<div class="container-fluid feature bg-light py-5">
-	<div class="container py-5">
-		<div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-			<h4 class="text-uppercase text-primary">Our Hiring System</h4>
-			<h1 class="display-3 text-capitalize mb-3">Industry’s Best Matches</h1>
+<!-- Blog Section Start -->
+<section class="blog-section pt-100 pb-70">
+	<div class="container">
+		<div class="section-title text-center">
+			<h2>News, Tips & Articles</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus</p>
 		</div>
-		<div class="row g-4">
-			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-				<div class="feature-item p-4 h-100 d-flex flex-column">
-					<div class="feature-icon mb-3"><i class="fas fa-briefcase text-white fa-3x"></i></div>
-					<a href="#" class="h4 mb-3">Hiring Technology</a>
-					<p class="mb-0">
-						Using cutting-edge technology our system matches candidates with open positions,
-						selecting those most suitable for the role not just in skill, but in personality.
-					</p>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-				<div class="feature-item p-4 h-100 d-flex flex-column">
-					<div class="feature-icon mb-3"><i class="fas fa-file-alt text-white fa-3x"></i></div>
-					<a href="#" class="h4 mb-3">Job Descriptions</a>
-					<p class="mb-0">
-						We help you define the tasks, responsibilities, and expectations of any position.
-					</p>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-				<div class="feature-item p-4 h-100 d-flex flex-column">
-					<div class="feature-icon mb-3"><i class="fas fa-user-check text-white fa-3x"></i></div>
-					<a href="#" class="h4 mb-3">Best Candidates</a>
-					<p class="mb-0">
-						Our unmatched recruitment insight ensures that you enjoy a streamlined process that selects
-						only the most suitable candidates for interview.
-					</p>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-				<div class="feature-item p-4 h-100 d-flex flex-column">
-					<div class="feature-icon mb-3"><i class="fas fa-tasks text-white fa-3x"></i></div>
-					<a href="#" class="h4 mb-3">Assessment</a>
-					<p class="mb-0">
-						We gain a deeper understanding of the types of jobs and tasks each candidate is naturally
-						predisposed for and will be a success at.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Refer a friend End-->
 
-<!-- Expertise Start -->
-<!-- <div class="container-fluid service bg-light overflow-hidden py-5">
-	<div class="container py-5">
-		<div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-			<h4 class="text-uppercase text-primary">Our Expertise</h4>
-			<h1 class="display-3 text-capitalize mb-3">Delivering Excellence Through Our Expert Staff</h1>
-		</div>
-		<div class="row gx-4 gy-4 align-items-center">
-			<div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
-				<div class="service-item rounded p-4 mb-4">
-					<div class="row">
-						<div class="col-12">
-							<div class="d-flex">
-								<div class="pe-4">
-									<div class="service-btn">
-										<i class="fas fa-truck text-white fa-2x"></i>
-									</div>
-								</div>
-								<div class="service-content">
-									<a href="#" class="h4 d-inline-block mb-3">Logistics & Warehousing</a>
-									<ul class="list list-style-none mb-0 pl-0">
-										<li>Order pickers</li>
-										<li>Packers</li>
-										<li>Shippers/receivers</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="service-item rounded p-4 mb-4">
-					<div class="row">
-						<div class="col-12">
-							<div class="d-flex">
-								<div class="pe-4">
-									<div class="service-btn"><i class="fas fa-apple-alt text-white fa-2x"></i></div>
-								</div>
-								<div class="service-content">
-									<a href="#" class="h4 d-inline-block mb-3">Food Processing & Distribution</a>
-									<ul class=" list list-style-none mb-0 pl-0">
-										<li>Packers</li>
-										<li>Mixers</li>
-										<li>Quality control</li>
-									</ul>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="service-item rounded p-4 mb-0">
-					<div class="row">
-						<div class="col-12">
-							<div class="d-flex">
-								<div class="pe-4">
-									<div class="service-btn"><i class="fas fa-car text-white fa-2x"></i></div>
-								</div>
-								<div class="service-content">
-									<a href="#" class="h4 d-inline-block mb-3">Automotive</a>
-									<ul class=" list list-style-none mb-0 pl-0">
-										<li>Assembly Line workers</li>
-										<li>Quality control</li>
-										<li>Machine operators</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-				<div class="service-item rounded p-4 mb-4">
-					<div class="row">
-						<div class="col-12">
-							<div class="d-flex">
-								<div class="pe-4">
-									<div class="service-btn">
-										<i class="fas fa-headset text-white fa-2x"></i>
-									</div>
-								</div>
-								<div class="service-content">
-									<a href="#" class="h4 d-inline-block mb-3">Customer Service & Client Care</a>
-									<ul class="list list-style-none mb-0 pl-0">
-										<li>Customer support representatives</li>
-										<li>Help desk agents</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="service-item rounded p-4 mb-4">
-					<div class="row">
-						<div class="col-12">
-							<div class="d-flex">
-								<div class="pe-4">
-									<div class="service-btn"><i class="fas fa-phone-alt text-white fa-2x"></i></div>
-								</div>
-								<div class="service-content">
-									<a href="#" class="h4 d-inline-block mb-3">Call Centre & Telemarketing</a>
-									<ul class="list list-style-none mb-0 pl-0">
-										<li>Call centre agents</li>
-										<li>Telemarketing reps</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="service-item rounded p-4 mb-0">
-					<div class="row">
-						<div class="col-12">
-							<div class="d-flex">
-								<div class="pe-4">
-									<div class="service-btn"><i class="fas fa-user-cog text-white fa-2x"></i></div>
-								</div>
-								<div class="service-content">
-									<a href="#" class="h4 d-inline-block mb-3">Management & Executive Search</a>
-									<ul class="list list-style-none mb-0 pl-0">
-										<li>Operations managers</li>
-										<li>Warehouse managers</li>
-										<li>Account executives</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
-				<div class="service-item rounded p-4 mb-4">
-					<div class="row">
-						<div class="col-12">
-							<div class="d-flex">
-								<div class="pe-4">
-									<div class="service-btn"><i class="fas fa-box-open text-white fa-2x"></i></div>
-								</div>
-								<div class="service-content">
-									<a href="#" class="h4 d-inline-block mb-3">Packaging</a>
-									<ul class="list list-style-none mb-0 pl-0">
-										<li>Press operators</li>
-										<li>Laminators</li>
-										<li>Print operators</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="service-item rounded p-4 mb-4">
-					<div class="row">
-						<div class="col-12">
-							<div class="d-flex">
-								<div class="pe-4">
-									<div class="service-btn"><i class="fas fa-user text-white fa-2x"></i></div>
-								</div>
-								<div class="service-content">
-									<a href="#" class="h4 d-inline-block mb-3">General Office & Admin</a>
-									<ul class="list list-style-none mb-0 pl-0">
-										<li>Receptionists/Front office</li>
-										<li>Office administrators</li>
-										<li>Sales support</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="service-item rounded p-4 mb-0">
-					<div class="row">
-						<div class="col-12">
-							<div class="d-flex">
-								<div class="pe-4">
-									<div class="service-btn"><i class="fas fa-calculator text-white fa-2x"></i></div>
-								</div>
-								<div class="service-content">
-									<a href="#" class="h4 d-inline-block mb-3">Accounting & Bookkeeping</a>
-									<ul class="list list-style-none mb-0 pl-0">
-										<li>Bookkeepers</li>
-										<li>Order entry clerks</li>
-										<li>Collection agents</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->
-<!-- Expertise End -->
-
-<!-- Fact Counter -->
-<div class="container-fluid counter py-5 bg-dark">
-	<div class="container py-5">
-		<div class="row g-5">
-			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-				<div class="counter-item text-center">
-					<div class="counter-item-icon mx-auto">
-						<i class="fas fa-briefcase fa-3x text-white"></i>
-					</div>
-					<h4 class="text-white my-4">Positions Filled</h4>
-					<div class="counter-counting">
-						<span class="text-white fs-2 fw-bold" data-toggle="counter-up">800</span>
-						<span class="h1 fw-bold text-white">+</span>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-				<div class="counter-item text-center">
-					<div class="counter-item-icon mx-auto">
-						<i class="fas fa-building fa-3x text-white"></i>
-					</div>
-					<h4 class="text-white my-4">Companies Served</h4>
-					<div class="counter-counting">
-						<span class="text-white fs-2 fw-bold" data-toggle="counter-up">70</span>
-						<span class="h1 fw-bold text-white">+</span>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-				<div class="counter-item text-center">
-					<div class="counter-item-icon mx-auto">
-						<i class="fas fa-user-tie fa-3x text-white"></i>
-					</div>
-					<h4 class="text-white my-4">Candidates Placed</h4>
-					<div class="counter-counting">
-						<span class="text-white fs-2 fw-bold" data-toggle="counter-up">3200</span>
-						<span class="h1 fw-bold text-white">+</span>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-				<div class="counter-item text-center">
-					<div class="counter-item-icon mx-auto">
-						<i class="fas fa-calendar-check fa-3x text-white"></i>
-					</div>
-					<h4 class="text-white my-4">Years of Experience</h4>
-					<div class="counter-counting">
-						<span class="text-white fs-2 fw-bold" data-toggle="counter-up">16</span>
-						<span class="h1 fw-bold text-white">+</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Fact Counter End -->
-
-<!-- Blog Start -->
-<!-- <div class="container-fluid blog pb-5">
-	<div class="container pb-5">
-
-		<div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-			<h1 class="display-3 text-uppercase text-primary mt-4">NexusHire</h1>
-			<h1 class="display-3 text-capitalize mb-3"> Insights & Updates</h1>
-		</div>
-		<div class="row g-4 justify-content-center">
-			<div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-				<div class="blog-item">
+		<div class="row justify-content-center">
+			<div class="col-lg-4 col-sm-6">
+				<div class="blog-card">
 					<div class="blog-img">
-						<img src="{{ asset('frontend-assets/uploads/blog/1727323465.jpg') }}" class="img-fluid rounded-top w-100" alt="NexusHire Blog 1">
+						<a href="blog-details.html">
+							<img src="assets/img/blog/1.jpg" alt="blog image">
+						</a>
 					</div>
-					<div class="blog-content rounded-bottom p-4">
-						<a href="https://www.freecodecamp.org/news/how-to-crack-almost-any-interview/" class="h4 d-inline-block mb-3">How To Crack Almost Any Job Interview</a>
-						<p>Are you preparing for an upcoming job interview? Read up on these super helpful interview tips to make sure you’re ready for it! Because, why not …?</p>
-						<a href="https://www.freecodecamp.org/news/how-to-crack-almost-any-interview/" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-				<div class="blog-item">
-					<div class="blog-img">
-						<img src="{{ asset('frontend-assets/uploads/blog/1727323251.jpg') }}" class="img-fluid rounded-top w-100" alt="NexusHire Blog 1">
-					</div>
-					<div class="blog-content rounded-bottom p-4">
-						<a href="#" class="h4 d-inline-block mb-3">How to Network with Confidence</a>
-						<p>As you begin to strike up a conversation, just focus on being yourself. You will feel more at ease and it will come across when speaking with others. People tend to spot people who are insincere pretty quickly.</p>
-						<a href="#" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-				<div class="blog-item">
-					<div class="blog-img">
-						<img src="{{ asset('frontend-assets/uploads/blog/1727323783.jpg') }}" class="img-fluid rounded-top w-100" alt="NexusHire Blog 1">
-					</div>
-					<div class="blog-content rounded-bottom p-4">
-						<a href="https://www.reed.co.uk/career-advice/how-to-deal-with-stress-in-an-interview/" class="h4 d-inline-block mb-3">How to deal with job interview stress</a>
-						<p>What if I forget everything I’ve ever learned when I’m asked a question?’ ‘What if I trip up on the way in?’ ‘What if I get lost on the way there, I forget my umbrella, get soaked – and somehow lose a shoe?’.</p>
-						<a href="https://www.reed.co.uk/career-advice/how-to-deal-with-stress-in-an-interview/" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->
-<!-- Blog End -->
+					<div class="blog-text">
+						<ul>
+							<li>
+								<i class='bx bxs-user'></i>
+								Admin
+							</li>
+							<li>
+								<i class='bx bx-calendar'></i>
+								7 Feb, 2024
+							</li>
+						</ul>
 
-<!-- Testimonial Start -->
-<div class="container-fluid testimonial pb-5">
-	<div class="container pb-5">
-		<div class="text-center mx-auto pb-5 wow" data-wow-delay="0.2s" style="max-width: 800px;">
-			<!-- <h4 class="text-uppercase text-primary">What NexusHire Users Say</h4> -->
-			<h1 class="display-3 text-capitalize mb-3">Our Client's Success Stories</h1>
-		</div>
-		<div class="owl-carousel testimonial-carousel wow " data-wow-delay="0.3s">
-			<!-- Testimonial 1 -->
-			<div class="testimonial-item text-center p-4">
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, consequatur impedit. Quaerat voluptate asperiores, praesentium ratione maiores ea iusto impedit odio adipisci enim, et iure nostrum quo. Iure, iste! Doloribus!
-				</p>
-				<div class="d-block">
-					<h4 class="text-dark">Prabhjot Gill</h4>
-					<p class="m-0 pb-3">Business Analyst</p>
-					<div class="d-flex justify-content-center text-secondary">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
+						<h3>
+							<a href="blog-details.html">
+								How to Indroduce in Yourself in Job Interview?
+							</a>
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+						<a href="blog-details.html" class="blog-btn">
+							Read More
+							<i class='bx bx-plus bx-spin'></i>
+						</a>
 					</div>
 				</div>
 			</div>
-			<!-- Testimonial 1 -->
-			<div class="testimonial-item text-center p-4">
-				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem asperiores maxime vero totam facilis ea possimus voluptatibus velit eveniet repellendus eius recusandae eligendi dolorem quae, consectetur sunt accusamus cupiditate beatae.
-				</p>
-				<div class="d-block">
-					<h4 class="text-dark">Christine</h4>
-					<p class="m-0 pb-3">Warehouse Operations</p>
-					<div class="d-flex justify-content-center text-secondary">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
+
+			<div class="col-lg-4 col-sm-6">
+				<div class="blog-card">
+					<div class="blog-img">
+						<a href="blog-details.html">
+							<img src="assets/img/blog/2.jpg" alt="blog image">
+						</a>
+					</div>
+					<div class="blog-text">
+						<ul>
+							<li>
+								<i class='bx bxs-user'></i>
+								Admin
+							</li>
+							<li>
+								<i class='bx bx-calendar'></i>
+								7 Feb, 2024
+							</li>
+						</ul>
+
+						<h3>
+							<a href="blog-details.html">
+								Looking for Highly Motivated Product to Build
+							</a>
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+						<a href="blog-details.html" class="blog-btn">
+							Read More
+							<i class='bx bx-plus bx-spin'></i>
+						</a>
 					</div>
 				</div>
 			</div>
-			<!-- Testimonial 1 -->
-			<div class="testimonial-item text-center p-4">
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nobis voluptatum magni distinctio voluptates, pariatur adipisci rem minima, dolorem repudiandae id consequuntur voluptatibus voluptatem commodi temporibus ipsa in. Cupiditate, consequatur?
-				</p>
-				<div class="d-block">
-					<h4 class="text-dark">Tammy</h4>
-					<p class="m-0 pb-3">Plant Manager</p>
-					<div class="d-flex justify-content-center text-secondary">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
+
+			<div class="col-lg-4 col-sm-6  ">
+				<div class="blog-card">
+					<div class="blog-img">
+						<a href="blog-details.html">
+							<img src="assets/img/blog/3.jpg" alt="blog image">
+						</a>
 					</div>
-				</div>
-			</div>
-			<!-- Testimonial 1 -->
-			<div class="testimonial-item text-center p-4">
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. At inventore debitis eos, voluptates animi delectus aut corporis modi iusto et quas maiores non. Minus corporis porro numquam vero soluta ratione?
-				</p>
-				<div class="d-block">
-					<h4 class="text-dark">Rebecca Fisher</h4>
-					<p class="m-0 pb-3">V.P Human resources</p>
-					<div class="d-flex justify-content-center text-secondary">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-				</div>
-			</div>
-			<!-- Testimonial 1 -->
-			<div class="testimonial-item text-center p-4">
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos maxime, tempore ipsum debitis corporis sunt voluptas quia excepturi quo magni nemo, ut asperiores accusantium eum nostrum earum. Minus, soluta nisi.
-				</p>
-				<div class="d-block">
-					<h4 class="text-dark">S. William</h4>
-					<p class="m-0 pb-3">Director</p>
-					<div class="d-flex justify-content-center text-secondary">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-				</div>
-			</div>
-			<!-- Testimonial 1 -->
-			<div class="testimonial-item text-center p-4">
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aut perferendis beatae libero cupiditate accusantium ea laborum debitis atque. Non minima magni animi voluptatem provident perferendis dignissimos numquam facere corrupti?
-				</p>
-				<div class="d-block">
-					<h4 class="text-dark">Peter Mayer</h4>
-					<p class="m-0 pb-3">HR Manager</p>
-					<div class="d-flex justify-content-center text-secondary">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
+					<div class="blog-text">
+						<ul>
+							<li>
+								<i class='bx bxs-user'></i>
+								Admin
+							</li>
+							<li>
+								<i class='bx bx-calendar'></i>
+								7 Feb, 2024
+							</li>
+						</ul>
+
+						<h3>
+							<a href="blog-details.html">
+								The Reason Why Software Develope is the Best Job
+							</a>
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+						<a href="blog-details.html" class="blog-btn">
+							Read More
+							<i class='bx bx-plus bx-spin'></i>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div> <!-- Testimonial End -->
+</section>
+<!-- Blog Section End -->
 @endsection
