@@ -61,7 +61,7 @@
 	<div class="navbar-area">
 		<!-- Menu For Mobile Device -->
 		<div class="mobile-nav">
-			<a href="index.html" class="logo">
+			<a href="{{ route('frontend.index') }}" class="logo">
 				<img src="{{ asset('frontend-assets/img/logo.png') }}" alt="logo" height="45px" width="90px">
 			</a>
 		</div>
@@ -70,7 +70,7 @@
 		<div class="main-nav">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg navbar-light">
-					<a class="navbar-brand" href="index.html">
+					<a class="navbar-brand" href="{{ route('frontend.index') }}">
 						<img src="{{ asset('frontend-assets/img/logo.png') }}" alt="logo" height="60px" width="120px">
 					</a>
 					<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -109,7 +109,7 @@
 				<div class="col-lg-3 col-sm-6">
 					<div class="footer-widget">
 						<div class="footer-logo">
-							<a href="index.html">
+							<a href="{{ route('frontend.index') }}">
 								<img src="{{ asset('frontend-assets/img/logo.png') }}" alt="logo" height="80px" width="150px">
 							</a>
 						</div>
