@@ -64,7 +64,7 @@ class FrontendController extends Controller
     public function jobboard()
     {
         try {
-            $jobs = Job::where('status', '1')->paginate(12);
+            $jobs = Job::where('status', '1')->paginate(10);
             return view('frontend.jobboard', compact('jobs'));
         } catch (Exception $e) {
             Log::error(__CLASS__ . '::' . __LINE__ . ' Exception: ' . $e->getMessage());

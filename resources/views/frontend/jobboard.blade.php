@@ -53,7 +53,7 @@
             No Jobs Available
         </div>
         @endif
-        @if($jobs->total() > 12)
+        @if($jobs->total() > 10)
             <div class="mt-4">
                 Showing {{ $jobs->firstItem() }} to {{ $jobs->lastItem() }} of {{ $jobs->total() }} entries
                 {{ $jobs->links() }}

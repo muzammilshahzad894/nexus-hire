@@ -24,7 +24,7 @@
 	<!-- Responsive CSS -->
 	<link rel="stylesheet" href="{{ asset('frontend-assets/css/responsive.css') }}">
 	<!-- Title CSS -->
-	<title>Jovie - Job Board & Hiring Portal HTML Template</title>
+	<title>Nexus Hire</title>
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="{{ asset('nexus-logo-favicon.png') }}">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
