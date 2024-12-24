@@ -8,7 +8,7 @@
 </head>
 <style>
     .bg-danger {
-        background-color: #294E5D !important;
+        background-color: #010c29 !important;
     }
     th {
         color: white;
@@ -25,7 +25,7 @@
     .header, .footer {
         width: 100%;
         text-align: left;
-        background-color: #294E5D;
+        background-color: #010c29;
         padding: 10px 0;
     }
 </style>
@@ -33,7 +33,7 @@
     <div class="container my-4">
         <div class="card">
             <div class="card-header bg-danger text-white">
-                <img src="{{ asset('frontend-assets/images/nexus-logo-removebg-preview.PNG') }}" alt="logo"
+                <img src="{{ asset('frontend-assets/img/logo.png') }}" alt="logo"
                  style="height: 50px; width: 100px;" />
             </div>
             <div class="card-body">

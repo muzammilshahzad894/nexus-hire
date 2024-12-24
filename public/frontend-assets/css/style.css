@@ -4559,6 +4559,10 @@ h3 {
   background: #9db508;
 }
 
+.contact-area form .contact-btn:disabled {
+  opacity: 0.5;
+}
+
 .contact-area form .list-unstyled {
   font-size: 16px;
   margin-top: 10px;

@@ -33,13 +33,8 @@
                             <i class='bx bx-phone-call'></i>
                             <ul>
                                 <li>
-                                    <a href="tel:+145664474574">
-                                        +1-456-644-7457
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tel:17459674567">
-                                        +1-745-967-4567
+                                    <a href="tel:07497684874">
+                                        07497684874
                                     </a>
                                 </li>
                             </ul>
@@ -51,13 +46,8 @@
                             <i class='bx bx-mail-send'></i>
                             <ul>
                                 <li>
-                                    <a href="#">
-                                        <span class="__cf_email__">info@testing.com</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="__cf_email__">hello@testing.com</span>
+                                    <a href="mailto:Nexushireltd@gmail.com">
+                                        <span class="__cf_email__">Nexushireltd@gmail.com</span>
                                     </a>
                                 </li>
                             </ul>
@@ -70,9 +60,6 @@
                             <ul>
                                 <li>
                                     123, Denver, USA
-                                </li>
-                                <li>
-                                    Street view 3/B, USA
                                 </li>
                             </ul>
                         </div>
@@ -89,49 +76,58 @@
     <div class="container">
         <div class="contact-area">
             <h3>Lets' Talk With Us</h3>
-            <form id="contactForm">
+            <form method="post" action="{{ route('frontend.contactPost') }}" enctype="multipart/form-data" onsubmit="document.getElementById('submit-btn').disabled = true; document.getElementById('submit-btn').innerHTML = 'Sending...';">
+                @csrf
+                <div class="row">
+                    <div class="col-12">
+                        @include('partials.messages')
+                        @if($errors->any())
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        @endif
+                    </div>
+                </div>
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your name" placeholder="Your Name">
-                            <div class="help-block with-errors"></div>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Your Name *" required value="{{ old('name') }}">
                         </div>
                     </div>
 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="email" name="email" id="email" class="form-control" required data-error="Please enter your email" placeholder="Your Email">
-                            <div class="help-block with-errors"></div>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Your Email *" required value="{{ old('email') }}">
                         </div>
                     </div>
 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="number" name="number" id="number" class="form-control" required data-error="Please enter your number" placeholder="Phone Number">
-                            <div class="help-block with-errors"></div>
+                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Number *" required value="{{ old('phone') }}">
                         </div>
                     </div>
 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="text" name="subject" id="subject" class="form-control" required data-error="Please enter your subject" placeholder="Your Subject">
-                            <div class="help-block with-errors"></div>
+                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject *" value="{{ old('subject') }}">
                         </div>
                     </div>
 
                     <div class="col-lg-12 col-md-12">
                         <div class="form-group">
-                            <textarea name="message" class="form-control message-field" id="message" cols="30" rows="7" required data-error="Please type your message" placeholder="Write Message"></textarea>
-                            <div class="help-block with-errors"></div>
+                            <textarea name="message" class="form-control message-field" id="message" cols="30" rows="7" placeholder="Write Message *" required>{{ old('message') }}</textarea>
                         </div>
                     </div>
 
                     <div class="col-lg-12 col-md-12 text-center">
-                        <button type="submit" class="default-btn contact-btn">
+                        <button type="submit" class="default-btn contact-btn" id="submit-btn">
                             Send Message
                         </button>
-                        <div id="msgSubmit" class="h3 alert-text text-center hidden"></div>
-                        <div class="clearfix"></div>
                     </div>
                 </div>
             </form>

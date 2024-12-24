@@ -189,7 +189,7 @@
 									<i class='bx bxs-envelope'></i>
 								</span>
 								<a href="mailto:Nexushireltd@gmail.com" class="px-1">
-									<span class="__cf_email__" data-cfemail="1a73747c755a70756c737f34797577">Nexushireltd@gmail.com</span>
+									<span class="__cf_email__">Nexushireltd@gmail.com</span>
 								</a>
 							</li>
 
