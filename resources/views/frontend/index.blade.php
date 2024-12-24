@@ -154,7 +154,7 @@
 			<div class="col-lg-7 p-0">
 				<div class="why-choose-text pt-100 pb-70">
 					<div class="section-title text-center">
-						<h2>Why You Choose Jovie?</h2>
+						<h2>Why You Choose Nexus Hire?</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolorei.</p>
 					</div>
 

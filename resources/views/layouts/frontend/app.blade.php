@@ -74,140 +74,25 @@
 						<img src="{{ asset('frontend-assets/img/logo.png') }}" alt="logo" height="60px" width="120px">
 					</a>
 					<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-						<ul class="navbar-nav m-auto">
+						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a href="#" class="nav-link dropdown-toggle active">Home</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item">
-										<a href="index.html" class="nav-link active">Home One</a>
-									</li>
-									<li class="nav-item">
-										<a href="index-two.html" class="nav-link">Home Two</a>
-									</li>
-									<li class="nav-item">
-										<a href="index-three.html" class="nav-link">Home Three</a>
-									</li>
-									<li class="nav-item">
-										<a href="index-four.html" class="nav-link">Home Four</a>
-									</li>
-									<li class="nav-item">
-										<a href="index-five.html" class="nav-link">Home Five</a>
-									</li>
-								</ul>
+								<a href="{{ route('frontend.index') }}" class="nav-link {{ request()->routeIs('frontend.index') ? 'active' : '' }}">Home</a>
 							</li>
 							<li class="nav-item">
-								<a href="about.html" class="nav-link">About</a>
+								<a href="{{ route('frontend.about') }}" class="nav-link {{ request()->routeIs('frontend.about') ? 'active' : '' }}">About</a>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link dropdown-toggle">Jobs</a>
-
-								<ul class="dropdown-menu">
-									<li class="nav-item">
-										<a href="find-job.html" class="nav-link">Find A Job</a>
-									</li>
-									<li class="nav-item">
-										<a href="post-job.html" class="nav-link">Post A Job</a>
-									</li>
-									<li class="nav-item">
-										<a href="job-list.html" class="nav-link">Job List</a>
-									</li>
-									<li class="nav-item">
-										<a href="job-grid.html" class="nav-link">Job Grid</a>
-									</li>
-									<li class="nav-item">
-										<a href="job-details.html" class="nav-link">Job Details</a>
-									</li>
-								</ul>
+								<a href="{{ route('frontend.jobboard') }}" class="nav-link {{ request()->routeIs('frontend.jobboard') ? 'active' : '' }}">Job Board</a>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link dropdown-toggle">Candidates</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item">
-										<a href="candidate.html" class="nav-link">Candidates</a>
-									</li>
-									<li class="nav-item">
-										<a href="candidate-details.html" class="nav-link">Candidates Details</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link dropdown-toggle">Pages</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item">
-										<a href="company.html" class="nav-link">Company</a>
-									</li>
-									<li class="nav-item">
-										<a href="pricing.html" class="nav-link">Pricing</a>
-									</li>
-									<li class="nav-item">
-										<a href="#" class="nav-link dropdown-toggle">Profile</a>
-										<ul class="dropdown-menu">
-											<li class="nav-item">
-												<a href="account.html" class="nav-link">Account</a>
-											</li>
-											<li class="nav-item">
-												<a href="#" class="nav-link dropdown-toggle">Member</a>
-
-												<ul class="dropdown-menu">
-													<li class="nav-item">
-														<a href="sign-in.html" class="nav-link">Sign In</a>
-													</li>
-													<li class="nav-item">
-														<a href="sign-up.html" class="nav-link">Sign Up</a>
-													</li>
-													<li class="nav-item">
-														<a href="reset-password.html" class="nav-link">Reset Password</a>
-													</li>
-												</ul>
-											<li>
-											<li class="nav-item">
-												<a href="resume.html" class="nav-link">Resume</a>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a href="404.html" class="nav-link">404 Page</a>
-									</li>
-									<li class="nav-item">
-										<a href="testimonial.html" class="nav-link">Testimonials</a>
-									</li>
-									<li class="nav-item">
-										<a href="faq.html" class="nav-link">FAQ</a>
-									</li>
-									<li class="nav-item">
-										<a href="#" class="nav-link">Catagories</a>
-									</li>
-									<li class="nav-item">
-										<a href="privacy-policy.html" class="nav-link">Privacy & Policy</a>
-									</li>
-									<li class="nav-item">
-										<a href="terms-condition.html" class="nav-link">Terms & Conditions</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link dropdown-toggle">Blog</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item">
-										<a href="blog.html" class="nav-link">Blog</a>
-									</li>
-									<li class="nav-item">
-										<a href="blog-two.html" class="nav-link">Blog Two</a>
-									</li>
-									<li class="nav-item">
-										<a href="blog-details.html" class="nav-link">Blog Details</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a href="contact.html" class="nav-link">Contact Us</a>
+								<a href="{{ route('frontend.contact') }}" class="nav-link {{ request()->routeIs('frontend.contact') ? 'active' : '' }}">Contact</a>
 							</li>
 						</ul>
 
-						<div class="other-option">
+						<!-- <div class="other-option">
 							<a href="sign-up.html" class="signup-btn">Sign Up</a>
 							<a href="sign-in.html" class="signin-btn">Sign In</a>
-						</div>
+						</div> -->
 					</div>
 				</nav>
 			</div>
@@ -242,84 +127,28 @@
 
 				<div class="col-lg-3 col-sm-6">
 					<div class="footer-widget pl-60">
-						<h3>For Candidate</h3>
+						<h3>About Us</h3>
 						<ul>
 							<li>
-								<a href="job-grid.html">
-									<i class='bx bx-chevrons-right bx-tada'></i>
-									Browse Jobs
-								</a>
-							</li>
-							<li>
-								<a href="account.html">
-									<i class='bx bx-chevrons-right bx-tada'></i>
-									Account
-								</a>
-							</li>
-							<li>
-								<a href="catagories.html">
-									<i class='bx bx-chevrons-right bx-tada'></i>
-									Browse Categories
-								</a>
-							</li>
-							<li>
-								<a href="resume.html">
-									<i class='bx bx-chevrons-right bx-tada'></i>
-									Resume
-								</a>
-							</li>
-							<li>
-								<a href="job-list.html">
-									<i class='bx bx-chevrons-right bx-tada'></i>
-									Job List
-								</a>
-							</li>
-							<li>
-								<a href="sign-up.html">
-									<i class='bx bx-chevrons-right bx-tada'></i>
-									Sign Up
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-sm-6">
-					<div class="footer-widget pl-60">
-						<h3>Quick Links</h3>
-						<ul>
-							<li>
-								<a href="index.html">
+								<a href="{{ route('frontend.index') }}">
 									<i class='bx bx-chevrons-right bx-tada'></i>
 									Home
 								</a>
 							</li>
 							<li>
-								<a href="about.html">
+								<a href="{{ route('frontend.about') }}">
 									<i class='bx bx-chevrons-right bx-tada'></i>
 									About
 								</a>
 							</li>
 							<li>
-								<a href="faq.html">
+								<a href="{{ route('frontend.jobboard') }}">
 									<i class='bx bx-chevrons-right bx-tada'></i>
-									FAQ
+									Job Board
 								</a>
 							</li>
 							<li>
-								<a href="pricing.html">
-									<i class='bx bx-chevrons-right bx-tada'></i>
-									Pricing
-								</a>
-							</li>
-							<li>
-								<a href="privacy.html">
-									<i class='bx bx-chevrons-right bx-tada'></i>
-									Privacy
-								</a>
-							</li>
-							<li>
-								<a href="contact.html">
+								<a href="{{ route('frontend.contact') }}">
 									<i class='bx bx-chevrons-right bx-tada'></i>
 									Contact
 								</a>
@@ -329,35 +158,46 @@
 				</div>
 
 				<div class="col-lg-3 col-sm-6">
+					<div class="footer-widget pl-60">
+						<h3>Business Hours</h3>
+						<div class="mb-3">
+							<h6 class="custom-text-muted mb-0">Mon - Friday:</h6>
+							<p class="text-white mb-0">
+								08:00 AM
+								to
+								05:00 PM
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
 					<div class="footer-widget footer-info">
-						<h3>Information</h3>
+						<h3>Contact Info</h3>
 						<ul>
-							<li>
+							<li class="d-flex">
 								<span>
 									<i class='bx bxs-phone'></i>
-									Phone:
 								</span>
-								<a href="tel:882569756">
-									+101 984 754
+								<a href="tel:07497684874" class="px-1">
+									07497684874
 								</a>
 							</li>
 
-							<li>
+							<li class="d-flex">
 								<span>
 									<i class='bx bxs-envelope'></i>
-									Email:
 								</span>
-								<a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#9ef7f0f8f1def4f1e8f7fbb0fdf1f3">
-									<span class="__cf_email__" data-cfemail="1a73747c755a70756c737f34797577">[email&#160;protected]</span>
+								<a href="mailto:Nexushireltd@gmail.com" class="px-1">
+									<span class="__cf_email__" data-cfemail="1a73747c755a70756c737f34797577">Nexushireltd@gmail.com</span>
 								</a>
 							</li>
 
-							<li>
+							<li class="d-flex">
 								<span>
 									<i class='bx bx-location-plus'></i>
-									Address:
+									123, Denver, USA
 								</span>
-								123, Denver, USA
 							</li>
 						</ul>
 					</div>
