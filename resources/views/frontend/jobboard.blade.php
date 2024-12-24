@@ -12,7 +12,7 @@
             <h2>Job List</h2>
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="{{ route('frontend.index') }}">Home</a>
                 </li>
                 <li>Job List</li>
             </ul>

@@ -20,12 +20,7 @@
 					<h1>Drop Resume & Get Your Desire Job!</h1>
 
 					<ul class="keyword">
-						<li>Trending Keywords:</li>
-						<li><a href="#">Automotive,</a></li>
-						<li><a href="#">Education,</a></li>
-						<li><a href="#">Health</a></li>
-						<li>and</li>
-						<li><a href="#">Care Engineering</a></li>
+						<li>We hire top talent for permanent and contract roles.</li>
 					</ul>
 				</div>
 			</div>
@@ -155,7 +150,7 @@
 				<div class="why-choose-text pt-100 pb-70">
 					<div class="section-title text-center">
 						<h2>Why You Choose Nexus Hire?</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolorei.</p>
+						<p>We connect businesses with exceptional talent, providing solutions to match your unique requirements.</p>
 					</div>
 
 					<div class="row justify-content-center">
@@ -164,7 +159,7 @@
 								<i class="flaticon-group align-self-center mr-3"></i>
 								<div class="media-body">
 									<h5 class="mt-0">Best Talented People</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<p>Connecting you with the best talent for success and growth.</p>
 								</div>
 							</div>
 						</div>
@@ -174,7 +169,7 @@
 								<i class="flaticon-research align-self-center mr-3"></i>
 								<div class="media-body">
 									<h5 class="mt-0">Easy To Find Canditate</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<p>Finding the perfect candidate simple with a streamlined process.</p>
 								</div>
 							</div>
 						</div>
@@ -184,7 +179,7 @@
 								<i class="flaticon-discussion align-self-center mr-3"></i>
 								<div class="media-body">
 									<h5 class="mt-0">Easy To Communicate</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<p>Communication made easy with streamlined tools for quick connections.</p>
 								</div>
 							</div>
 						</div>
@@ -194,7 +189,7 @@
 								<i class="flaticon-recruitment align-self-center mr-3"></i>
 								<div class="media-body">
 									<h5 class="mt-0">Global Recruitment Option</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<p>Access top talent worldwide with our global recruitment solutions.</p>
 								</div>
 							</div>
 						</div>
@@ -253,7 +248,7 @@
 							<h5 class="mt-0">Looking For a Job</h5>
 							<p>Your next role could be with one of these top leading organizations</p>
 
-							<a href="job-list.html">
+							<a href="{{ route('frontend.jobboard') }}">
 								Apply Now
 								<i class='bx bx-chevrons-right'></i>
 							</a>
@@ -270,7 +265,7 @@
 							<h5 class="mt-0">Are You Recruiting?</h5>
 							<p>Your next role could be with one of these top leading organizations</p>
 
-							<a href="post-job.html">
+							<a href="{{ route('frontend.jobboard') }}">
 								Apply Now
 								<i class='bx bx-chevrons-right'></i>
 							</a>

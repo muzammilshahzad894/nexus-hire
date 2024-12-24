@@ -4567,6 +4567,11 @@ button:disabled {
   opacity: 0.5;
 }
 
+.btn-success {
+  background: #A9C308 !important;
+  border: #80930b !important;
+}
+
 .contact-area form .list-unstyled {
   font-size: 16px;
   margin-top: 10px;

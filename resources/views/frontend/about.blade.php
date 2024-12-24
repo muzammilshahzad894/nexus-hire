@@ -22,7 +22,7 @@
             <h2>About Us</h2>
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="{{ route('frontend.index') }}">Home</a>
                 </li>
                 <li>About Us</li>
             </ul>
@@ -83,7 +83,7 @@
             <div class="col-lg-3 col-6">
                 <div class="counter-text">
                     <i class="flaticon-resume"></i>
-                    <h2><span>1225</span></h2>
+                    <h2><span>127</span></h2>
                     <p>Job Posted</p>
                 </div>
             </div>
@@ -91,7 +91,7 @@
             <div class="col-lg-3 col-6">
                 <div class="counter-text">
                     <i class="flaticon-recruitment"></i>
-                    <h2><span>145</span></h2>
+                    <h2><span>137</span></h2>
                     <p>Job Filed</p>
                 </div>
             </div>
@@ -99,7 +99,7 @@
             <div class="col-lg-3 col-6">
                 <div class="counter-text">
                     <i class="flaticon-portfolio"></i>
-                    <h2><span>170</span></h2>
+                    <h2><span>180</span></h2>
                     <p>Company</p>
                 </div>
             </div>
@@ -107,7 +107,7 @@
             <div class="col-lg-3 col-6">
                 <div class="counter-text">
                     <i class="flaticon-employee"></i>
-                    <h2><span>125</span></h2>
+                    <h2><span>144</span></h2>
                     <p>Members</p>
                 </div>
             </div>
@@ -121,7 +121,7 @@
     <div class="container">
         <div class="section-title text-center">
             <h2>Why You Choose Us Among Other Job Site?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus</p>
+            <p>At Nexus Hire, we value building lasting relationships with our clients. Unlike larger agencies, we focus on personalized attention, ensuring your business receives the care it deserves. When you partner with us, you're not just a client; you're a key part of our community.</p>
         </div>
 
         <div class="row justify-content-center">
@@ -129,7 +129,7 @@
                 <div class="choose-card">
                     <i class="flaticon-resume"></i>
                     <h3>Advertise Job</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+                    <p>Easily advertise your job openings to reach top talent and find the ideal, qualified candidate quickly for your hiring needs.</p>
                 </div>
             </div>
 
@@ -137,7 +137,7 @@
                 <div class="choose-card">
                     <i class="flaticon-recruitment"></i>
                     <h3>Recruiter Profiles</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+                    <p>Browse detailed recruiter profiles to quickly and easily find the perfect match for your hiring needs, expertise, and goals. </p>
                 </div>
             </div>
 
@@ -145,7 +145,7 @@
                 <div class="choose-card">
                     <i class="flaticon-employee"></i>
                     <h3>Find Your Dream Job</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+                    <p>Discover and apply for your dream job with our tailored opportunities that match your skills and aspirations. </p>
                 </div>
             </div>
         </div>

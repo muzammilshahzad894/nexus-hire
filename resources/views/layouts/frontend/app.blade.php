@@ -88,11 +88,6 @@
 								<a href="{{ route('frontend.contact') }}" class="nav-link {{ request()->routeIs('frontend.contact') ? 'active' : '' }}">Contact</a>
 							</li>
 						</ul>
-
-						<!-- <div class="other-option">
-							<a href="sign-up.html" class="signup-btn">Sign Up</a>
-							<a href="sign-in.html" class="signin-btn">Sign In</a>
-						</div> -->
 					</div>
 				</nav>
 			</div>
@@ -114,13 +109,13 @@
 							</a>
 						</div>
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna. Sed eiusmod tempor incididunt ut.</p>
+						<p>Nexus Hire connects businesses with top talent through efficient, tailored recruitment solutions, making hiring quick and effective.</p>
 
 						<div class="footer-social">
-							<a href="https://www.facebook.com/login/" target="_blank"><i class='bx bxl-facebook'></i></a>
-							<a href="https://twitter.com/i/flow/login" target="_blank"><i class='bx bxl-twitter'></i></a>
-							<a href="https://www.pinterest.com/" target="_blank"><i class='bx bxl-pinterest-alt'></i></a>
-							<a href="https://www.linkedin.com/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+							<a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
+							<a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
+							<a href="#" target="_blank"><i class='bx bxl-pinterest-alt'></i></a>
+							<a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a>
 						</div>
 					</div>
 				</div>
