@@ -26,7 +26,7 @@
 	<!-- Title CSS -->
 	<title>Jovie - Job Board & Hiring Portal HTML Template</title>
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="{{ asset('frontend-assets/img/favicon.png') }}">
+	<link rel="icon" type="image/png" href="{{ asset('nexus-logo-favicon.png') }}">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 	
 	@yield('css')
@@ -233,6 +233,8 @@
 	<script src="{{ asset('frontend-assets/js/meanmenu.js') }}"></script>
 	<!-- Custom JS -->
 	<script src="{{ asset('frontend-assets/js/custom.js') }}"></script>
+	
+	@yield('javascript')
 </body>
 
 </html>

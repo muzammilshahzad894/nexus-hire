@@ -4563,6 +4563,10 @@ h3 {
   opacity: 0.5;
 }
 
+button:disabled {
+  opacity: 0.5;
+}
+
 .contact-area form .list-unstyled {
   font-size: 16px;
   margin-top: 10px;

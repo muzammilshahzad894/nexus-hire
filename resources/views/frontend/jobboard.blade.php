@@ -62,6 +62,81 @@
     </div>
 </div>
 <!-- Jobs Section End -->
+ 
+<!-- Job Detail Modal Start -->
+<div class="modal fade" id="jobDetailModal" tabindex="-1" aria-labelledby="jobDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="jobDetailModalLabel">Job Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="job-title" class="fw-bold"></p>
+                <div id="job-detais"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success apply-btn" data-job="{{ $job }}" id="apply-btn-modal">
+                    Apply Now
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Job Detail Modal End -->
+ 
+<!-- Apply Modal -->
+<div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="applyModalLabel">Apply for Job</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="applyForm" action="{{ route('frontend.job.apply') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <input type="hidden" id="job_id" name="job_id" value="">
+                    <div class="mb-3">
+                        <label for="job_title" class="form-label">Job Role</label>
+                        <input type="text" id="job_title" name="job_title" class="form-control text-capitalize" value="" readonly disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" name="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contact" class="form-label">Contact Number</label>
+                        <input type="text" name="contact" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="resume" class="form-label">Upload Resume (pdf,doc,docx)</label>
+                        <input type="file" name="resume" class="form-control" accept=".pdf,.doc,.docx" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Why do you want to work with us? (Optional)</label>
+                        <textarea name="message" class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="alert alert-danger alert-dismissible fade show" style="display: none;" id="error-section">
+                        <ul id="error-list"></ul>
+                        <button type="button" class="btn-close" onclick="$('#error-section').hide()"></button>
+                    </div>
+                    <div class="alert alert-success alert-dismissible fade show" style="display: none;" id="success-section">
+                        <span id="success-list"></span>
+                        <button type="button" class="btn-close" onclick="$('#success-section').hide()"></button>
+                    </div>
+                    <button type="submit" class="btn btn-success" id="submit-application-btn">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Apply Modal End -->
 @endsection
 
 @section('javascript')
