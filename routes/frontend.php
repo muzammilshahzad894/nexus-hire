@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\frontend\FrontendController;
 use App\Http\Controllers\frontend\JobController;
+use App\Http\Controllers\LogViewerController;
+
+Route::get('logs', [LogViewerController::class, 'index']);
 
 Route::get('/', [FrontendController::class, 'index'])->name('frontend.index');
 Route::get('/about', [FrontendController::class, 'about'])->name('frontend.about');

@@ -30,7 +30,6 @@ class JobController extends Controller
             try {
                 $this->emailService->sendJobApplication($application->id);
             } catch (Exception $e) {
-                dd($e->getMessage());
                 Log::error(__CLASS__ . '::' . __LINE__ . ' Exception: ' . $e->getMessage());
             }
             

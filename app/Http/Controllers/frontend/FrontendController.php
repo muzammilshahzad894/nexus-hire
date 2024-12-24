@@ -53,7 +53,11 @@ class FrontendController extends Controller
                 'subject' => $request->subject,
                 'message' => $request->message,
             ];
-            $this->emailService->sendContactEmail($data);
+            try {
+                $this->emailService->sendContactEmail($data);
+            } catch (\Exception $e) {
+                Log::error('Contact Post Error: ' . $e->getMessage());
+            }
             return redirect()->back()->with('success', 'Message sent successfully, we will get back to you soon.');
         } catch (\Exception $e) {
             Log::error('Contact Post Error: ' . $e->getMessage());
