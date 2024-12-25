@@ -174,7 +174,7 @@
 								<span>
 									<i class='bx bxs-phone'></i>
 								</span>
-								<a href="tel:07497684874" class="px-1">
+								<a href="tel:+4407497684874" class="px-1">
 									07497684874
 								</a>
 							</li>
